@@ -1,0 +1,368 @@
+{
+  "carrera": "Ingeniería Informática Administrativa",
+  "universidad": "UPSA · Universidad Privada de Santa Cruz de la Sierra",
+  "materias": [
+    {
+      "semestre": 1, "nombre": "Fundamentos de Matemática", "icono": "➗",
+      "descripcion": "Refuerza las bases de aritmética, álgebra y funciones necesarias para el resto de la carrera. Nivela a todos los estudiantes para enfrentar con seguridad las materias de cálculo y estadística.",
+      "temas": ["Números reales y operaciones", "Expresiones algebraicas", "Ecuaciones e inecuaciones", "Funciones y sus gráficas", "Trigonometría básica"],
+      "utilidad": "Es la base del razonamiento cuantitativo que usarás en programación, finanzas y análisis de datos."
+    },
+    {
+      "semestre": 1, "nombre": "Álgebra I", "icono": "🔣",
+      "descripcion": "Introduce el lenguaje formal de la matemática: lógica, conjuntos y estructuras algebraicas. Desarrolla la capacidad de razonar con precisión y demostrar ideas.",
+      "temas": ["Lógica proposicional", "Teoría de conjuntos", "Relaciones y funciones", "Números complejos", "Polinomios"],
+      "utilidad": "La lógica que aprendes aquí es la misma que usan los programas: condiciones, decisiones y reglas."
+    },
+    {
+      "semestre": 1, "nombre": "Fundamentos de Administración de Empresas", "icono": "🏢",
+      "descripcion": "Presenta cómo funciona una empresa por dentro y el rol del administrador. Es el primer paso del perfil administrativo que distingue a esta carrera.",
+      "temas": ["Proceso administrativo", "Planificación y organización", "Dirección y liderazgo", "Control de gestión", "Áreas funcionales de la empresa"],
+      "utilidad": "Te permite entender las necesidades del negocio para diseñar soluciones tecnológicas que realmente aporten valor."
+    },
+    {
+      "semestre": 1, "nombre": "Pensamiento Crítico", "icono": "🧠",
+      "descripcion": "Desarrolla habilidades para analizar argumentos, evaluar fuentes de información y construir opiniones fundamentadas.",
+      "temas": ["Argumentación y falacias", "Análisis de fuentes", "Resolución de problemas", "Comunicación de ideas", "Toma de postura"],
+      "utilidad": "Te ayuda a cuestionar, investigar y decidir con criterio en un mundo lleno de información."
+    },
+    {
+      "semestre": 1, "nombre": "Fundamentos de TI", "icono": "💻",
+      "descripcion": "Primer contacto con el mundo de las tecnologías de la información: cómo funciona una computadora, el software y los servicios digitales que usan las empresas.",
+      "temas": ["Hardware y componentes", "Sistemas de numeración", "Software y sistemas operativos", "Internet y servicios digitales", "Tendencias tecnológicas"],
+      "utilidad": "Te da el panorama completo de la tecnología sobre la que construirás toda tu carrera.",
+      "herramientas": ["Windows", "Linux", "Office"]
+    },
+    {
+      "semestre": 1, "nombre": "Contabilidad General I", "icono": "📒",
+      "descripcion": "Enseña los principios contables y cómo se registran las operaciones de una empresa hasta llegar a sus estados financieros.",
+      "temas": ["Principios contables", "Partida doble", "Libro diario y mayor", "Balance de comprobación", "Estados financieros básicos"],
+      "utilidad": "Clave para desarrollar sistemas contables y ERP, uno de los campos más demandados para el ingeniero informático administrativo.",
+      "herramientas": ["Excel"]
+    },
+
+    {
+      "semestre": 2, "nombre": "Cálculo I", "icono": "📈",
+      "descripcion": "Estudia el cambio a través de límites y derivadas, herramientas fundamentales para modelar fenómenos y optimizar resultados.",
+      "temas": ["Límites y continuidad", "Derivadas y sus reglas", "Razón de cambio", "Máximos y mínimos", "Aplicaciones a la economía"],
+      "utilidad": "Permite optimizar costos, ganancias y recursos, y es la base matemática de la inteligencia artificial."
+    },
+    {
+      "semestre": 2, "nombre": "Álgebra II", "icono": "🧮",
+      "descripcion": "Trabaja con matrices, vectores y sistemas de ecuaciones lineales, el lenguaje matemático de la computación moderna.",
+      "temas": ["Matrices y operaciones", "Determinantes", "Sistemas de ecuaciones lineales", "Espacios vectoriales", "Transformaciones lineales"],
+      "utilidad": "Las matrices están detrás de los gráficos por computadora, el machine learning y la investigación operativa."
+    },
+    {
+      "semestre": 2, "nombre": "Teoría de la Organización", "icono": "🏛️",
+      "descripcion": "Analiza cómo se estructuran las organizaciones, su cultura y el comportamiento de las personas que las forman.",
+      "temas": ["Escuelas de la administración", "Estructuras organizacionales", "Cultura organizacional", "Comportamiento humano", "Cambio organizacional"],
+      "utilidad": "Te prepara para implantar sistemas en empresas reales, donde el factor humano es tan importante como el técnico."
+    },
+    {
+      "semestre": 2, "nombre": "Fundamentos de Programación", "icono": "⌨️",
+      "descripcion": "Tu primer paso como desarrollador: aprendes a pensar en algoritmos y a escribir programas que resuelven problemas.",
+      "temas": ["Algoritmos y diagramas de flujo", "Variables y tipos de datos", "Condicionales y bucles", "Funciones", "Arreglos"],
+      "utilidad": "Programar es la habilidad central de la carrera: a partir de aquí construirás aplicaciones, sistemas y automatizaciones.",
+      "herramientas": ["Python", "C++", "VS Code"]
+    },
+    {
+      "semestre": 2, "nombre": "Redes I", "icono": "🌐",
+      "descripcion": "Explica cómo se comunican las computadoras, desde el cable hasta internet, y cómo se arma una red local.",
+      "temas": ["Modelo OSI y TCP/IP", "Direccionamiento IP", "Medios y cableado estructurado", "Switches y routers", "Redes LAN"],
+      "utilidad": "Toda empresa necesita una red confiable: diseñarla y mantenerla es parte de tu perfil profesional.",
+      "herramientas": ["Cisco Packet Tracer"]
+    },
+    {
+      "semestre": 2, "nombre": "Contabilidad General II", "icono": "📊",
+      "descripcion": "Profundiza en el ciclo contable completo: ajustes, cierres y análisis de los estados financieros.",
+      "temas": ["Asientos de ajuste", "Depreciaciones", "Cierre del ejercicio", "Análisis de estados financieros", "Impuestos básicos"],
+      "utilidad": "Te permite entender y automatizar procesos contables dentro de los sistemas de información de una empresa.",
+      "herramientas": ["Excel"]
+    },
+
+    {
+      "semestre": 3, "nombre": "Cálculo II", "icono": "∫",
+      "descripcion": "Completa la formación en cálculo con integrales y series, herramientas para medir acumulaciones y aproximar funciones.",
+      "temas": ["Integral indefinida", "Integral definida", "Técnicas de integración", "Áreas y volúmenes", "Series y sucesiones"],
+      "utilidad": "Se aplica en probabilidad, análisis financiero y modelos de simulación."
+    },
+    {
+      "semestre": 3, "nombre": "Estadística I", "icono": "📉",
+      "descripcion": "Introduce la estadística descriptiva y la probabilidad para resumir, entender y comunicar datos.",
+      "temas": ["Recolección de datos", "Medidas de tendencia central", "Medidas de dispersión", "Probabilidad", "Distribuciones"],
+      "utilidad": "Es el primer paso hacia el análisis de datos y la inteligencia de negocios.",
+      "herramientas": ["Excel", "SPSS"]
+    },
+    {
+      "semestre": 3, "nombre": "Interculturalidad, Ciudadanía y Género", "icono": "🤝",
+      "descripcion": "Reflexiona sobre la diversidad cultural, los derechos ciudadanos y la equidad de género en la sociedad boliviana.",
+      "temas": ["Diversidad cultural", "Derechos y deberes ciudadanos", "Equidad de género", "Inclusión", "Convivencia democrática"],
+      "utilidad": "Forma profesionales que lideran equipos diversos con respeto y responsabilidad social."
+    },
+    {
+      "semestre": 3, "nombre": "Estructuras de Datos", "icono": "🌳",
+      "descripcion": "Enseña a organizar la información en memoria de forma eficiente para que los programas sean rápidos y escalables.",
+      "temas": ["Listas enlazadas", "Pilas y colas", "Árboles binarios", "Recursividad", "Complejidad algorítmica"],
+      "utilidad": "Es lo que diferencia un programa que funciona de uno que funciona bien con millones de datos.",
+      "herramientas": ["Java", "C++"]
+    },
+    {
+      "semestre": 3, "nombre": "Redes II", "icono": "📡",
+      "descripcion": "Avanza hacia redes empresariales: enrutamiento, conmutación y configuración de equipos de red.",
+      "temas": ["Enrutamiento estático y dinámico", "VLANs", "Protocolos de enrutamiento", "Redes inalámbricas", "Seguridad en redes"],
+      "utilidad": "Te prepara para administrar la infraestructura de comunicaciones de una organización.",
+      "herramientas": ["Cisco Packet Tracer", "Wireshark"]
+    },
+    {
+      "semestre": 3, "nombre": "Contabilidad de Costos I", "icono": "🏭",
+      "descripcion": "Enseña a calcular y controlar cuánto cuesta producir un bien o servicio dentro de una empresa.",
+      "temas": ["Elementos del costo", "Materia prima y mano de obra", "Costos indirectos", "Sistemas de costeo", "Hoja de costos"],
+      "utilidad": "Base para desarrollar sistemas de costos y apoyar decisiones de precios y producción.",
+      "herramientas": ["Excel"]
+    },
+
+    {
+      "semestre": 4, "nombre": "Ética y Valores", "icono": "⚖️",
+      "descripcion": "Analiza la responsabilidad ética del profesional, especialmente en el manejo de información y tecnología.",
+      "temas": ["Ética profesional", "Valores y moral", "Ética en la tecnología", "Privacidad de datos", "Responsabilidad social"],
+      "utilidad": "Un ingeniero maneja datos sensibles: la ética guía cómo usarlos correctamente."
+    },
+    {
+      "semestre": 4, "nombre": "Estadística II", "icono": "📐",
+      "descripcion": "Pasa de describir datos a sacar conclusiones: inferencia, pruebas de hipótesis y modelos de regresión.",
+      "temas": ["Muestreo", "Estimación", "Pruebas de hipótesis", "Regresión y correlación", "Análisis de varianza"],
+      "utilidad": "Permite tomar decisiones basadas en datos y es la base de la ciencia de datos.",
+      "herramientas": ["Excel", "SPSS", "R"]
+    },
+    {
+      "semestre": 4, "nombre": "Programación Aplicada", "icono": "🧩",
+      "descripcion": "Aplica la programación orientada a objetos para construir aplicaciones completas que resuelven problemas reales.",
+      "temas": ["Clases y objetos", "Herencia y polimorfismo", "Interfaces gráficas", "Manejo de archivos", "Conexión a bases de datos"],
+      "utilidad": "Aquí desarrollas tus primeras aplicaciones de escritorio con calidad profesional.",
+      "herramientas": ["Java", "C#", "Git"]
+    },
+    {
+      "semestre": 4, "nombre": "Sistemas Operativos", "icono": "🖥️",
+      "descripcion": "Explica lo que ocurre dentro de Windows y Linux: cómo se administran los procesos, la memoria y los archivos.",
+      "temas": ["Procesos e hilos", "Planificación del CPU", "Gestión de memoria", "Sistemas de archivos", "Concurrencia"],
+      "utilidad": "Entender el sistema operativo te permite crear software eficiente y administrar servidores.",
+      "herramientas": ["Linux", "Windows"]
+    },
+    {
+      "semestre": 4, "nombre": "Matemática Financiera I", "icono": "💰",
+      "descripcion": "Estudia el valor del dinero en el tiempo y las herramientas para evaluar préstamos, ahorros e inversiones.",
+      "temas": ["Interés simple y compuesto", "Tasas nominales y efectivas", "Anualidades", "Amortización", "Valor presente y futuro"],
+      "utilidad": "Indispensable para desarrollar sistemas bancarios y financieros, y para evaluar proyectos.",
+      "herramientas": ["Excel"]
+    },
+    {
+      "semestre": 4, "nombre": "Certificación Idioma Inglés", "icono": "🇬🇧",
+      "descripcion": "Acredita tu dominio del inglés, el idioma de la tecnología, la documentación técnica y los negocios internacionales.",
+      "temas": ["Comprensión lectora", "Comunicación oral", "Redacción", "Inglés técnico", "Preparación para la certificación"],
+      "utilidad": "Abre las puertas a empleos internacionales, trabajo remoto y certificaciones tecnológicas."
+    },
+
+    {
+      "semestre": 5, "nombre": "Investigación Operativa I", "icono": "🎯",
+      "descripcion": "Usa modelos matemáticos para encontrar la mejor forma de asignar recursos limitados en una organización.",
+      "temas": ["Programación lineal", "Método simplex", "Problemas de transporte", "Asignación", "Análisis de sensibilidad"],
+      "utilidad": "Optimiza rutas, inventarios y producción: decisiones que ahorran dinero real a las empresas.",
+      "herramientas": ["Excel Solver", "LINGO"]
+    },
+    {
+      "semestre": 5, "nombre": "Análisis Estadístico de Calidad", "icono": "✅",
+      "descripcion": "Aplica la estadística para medir, controlar y mejorar la calidad de procesos y productos.",
+      "temas": ["Control estadístico de procesos", "Gráficos de control", "Capacidad de proceso", "Muestreo de aceptación", "Six Sigma"],
+      "utilidad": "Te permite detectar fallas y mejorar procesos con datos, tanto en software como en producción.",
+      "herramientas": ["Minitab", "Excel"]
+    },
+    {
+      "semestre": 5, "nombre": "Bases de Datos", "icono": "🗄️",
+      "descripcion": "Enseña a diseñar y consultar bases de datos, el corazón de cualquier sistema de información.",
+      "temas": ["Modelo entidad-relación", "Modelo relacional", "Normalización", "Lenguaje SQL", "Procedimientos y vistas"],
+      "utilidad": "Toda aplicación guarda datos: diseñar bases sólidas es una de las habilidades más pedidas.",
+      "herramientas": ["SQL Server", "MySQL", "PostgreSQL"]
+    },
+    {
+      "semestre": 5, "nombre": "Estructura de Datos Avanzadas", "icono": "🕸️",
+      "descripcion": "Profundiza en estructuras y algoritmos complejos para resolver problemas de gran escala.",
+      "temas": ["Grafos y recorridos", "Árboles balanceados", "Tablas hash", "Algoritmos de ordenamiento", "Caminos mínimos"],
+      "utilidad": "Son los algoritmos detrás de GPS, redes sociales y buscadores.",
+      "herramientas": ["Java", "C++"]
+    },
+    {
+      "semestre": 5, "nombre": "Laboratorio de Sistemas Operativos I", "icono": "🐧",
+      "descripcion": "Práctica intensiva de instalación, configuración y administración de sistemas operativos.",
+      "temas": ["Instalación de sistemas", "Línea de comandos", "Usuarios y permisos", "Scripts en Bash", "Gestión de servicios"],
+      "utilidad": "Desarrolla las habilidades prácticas de un administrador de sistemas.",
+      "herramientas": ["Linux", "Bash", "VirtualBox"]
+    },
+    {
+      "semestre": 5, "nombre": "Administración Financiera I", "icono": "🏦",
+      "descripcion": "Estudia cómo una empresa gestiona su dinero en el corto plazo para mantenerse sana y rentable.",
+      "temas": ["Análisis financiero", "Capital de trabajo", "Gestión de efectivo", "Cuentas por cobrar", "Inventarios"],
+      "utilidad": "Te permite diseñar herramientas que apoyen las decisiones financieras de la gerencia.",
+      "herramientas": ["Excel"]
+    },
+
+    {
+      "semestre": 6, "nombre": "Emprendimiento y Gestión de la Innovación", "icono": "🚀",
+      "descripcion": "Guía el camino de una idea a un negocio: detectar oportunidades, validar soluciones y crear modelos de negocio.",
+      "temas": ["Detección de oportunidades", "Design Thinking", "Modelo Canvas", "Validación de ideas", "Startups tecnológicas"],
+      "utilidad": "Te prepara para crear tu propia empresa tecnológica o innovar dentro de una organización."
+    },
+    {
+      "semestre": 6, "nombre": "Administración de Recursos Humanos", "icono": "👥",
+      "descripcion": "Aborda la gestión del talento: cómo atraer, desarrollar y retener a las personas en una organización.",
+      "temas": ["Reclutamiento y selección", "Capacitación", "Evaluación del desempeño", "Remuneraciones", "Clima laboral"],
+      "utilidad": "Útil para liderar equipos de desarrollo y diseñar sistemas de gestión de personal."
+    },
+    {
+      "semestre": 6, "nombre": "Ingeniería de Software", "icono": "🛠️",
+      "descripcion": "Enseña a construir software de calidad de forma profesional, desde los requisitos hasta la entrega.",
+      "temas": ["Ciclo de vida del software", "Requisitos", "Modelado UML", "Metodologías ágiles (Scrum)", "Pruebas de software"],
+      "utilidad": "Así trabajan los equipos de desarrollo en la industria: aprenderás a planificar y entregar proyectos reales.",
+      "herramientas": ["Git", "Jira", "UML"]
+    },
+    {
+      "semestre": 6, "nombre": "Laboratorio de Sistemas Operativos II", "icono": "🖧",
+      "descripcion": "Lleva la administración de sistemas al nivel de servidor: servicios de red, seguridad y automatización.",
+      "temas": ["Servidores web y DNS", "Directorio activo", "Respaldos", "Seguridad del sistema", "Automatización"],
+      "utilidad": "Te prepara para administrar los servidores que sostienen los servicios de una empresa.",
+      "herramientas": ["Linux Server", "Windows Server"]
+    },
+    {
+      "semestre": 6, "nombre": "Presupuesto", "icono": "🗓️",
+      "descripcion": "Enseña a planificar financieramente una empresa o proyecto y a controlar que se cumpla lo previsto.",
+      "temas": ["Presupuesto maestro", "Presupuesto de ventas", "Presupuesto de gastos", "Flujo de caja", "Control presupuestario"],
+      "utilidad": "Esencial para gestionar proyectos de TI dentro del tiempo y el costo previstos.",
+      "herramientas": ["Excel"]
+    },
+    {
+      "semestre": 6, "nombre": "Análisis para la Toma de Decisiones", "icono": "🧭",
+      "descripcion": "Aplica técnicas cuantitativas para evaluar alternativas y elegir la mejor opción bajo incertidumbre.",
+      "temas": ["Teoría de decisiones", "Árboles de decisión", "Análisis de riesgo", "Simulación", "Decisiones multicriterio"],
+      "utilidad": "Combina datos y modelos para apoyar a la gerencia con decisiones mejor fundamentadas."
+    },
+
+    {
+      "semestre": 7, "nombre": "Sistemas de Información", "icono": "🗂️",
+      "descripcion": "Estudia cómo la información y la tecnología apoyan la operación y la estrategia de una empresa.",
+      "temas": ["Tipos de sistemas de información", "ERP y CRM", "Inteligencia de negocios", "Análisis de procesos", "Gestión de la información"],
+      "utilidad": "Es el punto de encuentro entre la informática y la administración: el corazón de esta carrera.",
+      "herramientas": ["SAP", "Power BI"]
+    },
+    {
+      "semestre": 7, "nombre": "Desarrollo de Aplicaciones Web", "icono": "🕸",
+      "descripcion": "Enseña a construir aplicaciones web completas, desde la interfaz que ve el usuario hasta el servidor y la base de datos.",
+      "temas": ["HTML, CSS y JavaScript", "Frameworks frontend", "APIs REST", "Desarrollo backend", "Despliegue de aplicaciones"],
+      "utilidad": "La web es la plataforma más usada por las empresas: aquí aprendes a crear sus sistemas.",
+      "herramientas": ["JavaScript", "React", "Node.js"]
+    },
+    {
+      "semestre": 7, "nombre": "Virtualización y Computación en la Nube", "icono": "☁️",
+      "descripcion": "Explica cómo las empresas ejecutan sus sistemas en servidores virtuales y en la nube.",
+      "temas": ["Máquinas virtuales", "Contenedores", "Modelos IaaS, PaaS y SaaS", "Servicios en la nube", "Escalabilidad"],
+      "utilidad": "La mayoría de las empresas migra a la nube: es una de las áreas con más demanda laboral.",
+      "herramientas": ["Docker", "AWS", "Azure"]
+    },
+    {
+      "semestre": 7, "nombre": "Resolución de Problemas y Toma de Decisiones", "icono": "💡",
+      "descripcion": "Desarrolla métodos estructurados para analizar problemas complejos y encontrar soluciones efectivas.",
+      "temas": ["Identificación de problemas", "Análisis de causa raíz", "Generación de alternativas", "Trabajo en equipo", "Implementación de soluciones"],
+      "utilidad": "Es la habilidad más valorada por los empleadores: resolver problemas de forma ordenada."
+    },
+    {
+      "semestre": 7, "nombre": "Gestión de Empresas Familiares y Pymes", "icono": "🏪",
+      "descripcion": "Analiza los retos de las pequeñas y medianas empresas, que son la mayoría del tejido empresarial del país.",
+      "temas": ["Características de las pymes", "Empresa familiar", "Sucesión y gobierno", "Crecimiento", "Transformación digital"],
+      "utilidad": "Las pymes necesitan digitalizarse: es un gran mercado para tus soluciones tecnológicas."
+    },
+    {
+      "semestre": 7, "nombre": "Electiva I", "icono": "⭐",
+      "descripcion": "Materia a elección para profundizar en un área de tu interés dentro de la informática o la administración.",
+      "temas": ["Elegida por el estudiante", "Especialización temprana", "Temas de actualidad"],
+      "utilidad": "Te permite orientar tu perfil hacia el área en la que quieres destacar."
+    },
+
+    {
+      "semestre": 8, "nombre": "Gestión de Calidad Total", "icono": "🏅",
+      "descripcion": "Presenta los modelos y normas para que toda la organización trabaje con un enfoque de mejora continua.",
+      "temas": ["Filosofía de calidad total", "Normas ISO 9001", "Mejora continua (PDCA)", "Herramientas de calidad", "Calidad en el software"],
+      "utilidad": "Las empresas certificadas necesitan profesionales que entiendan y apliquen estas normas."
+    },
+    {
+      "semestre": 8, "nombre": "Gestión de Base de Datos", "icono": "🛢️",
+      "descripcion": "Profundiza en la administración de bases de datos: rendimiento, seguridad y disponibilidad de la información.",
+      "temas": ["Administración del SGBD", "Optimización de consultas", "Respaldo y recuperación", "Seguridad de datos", "Bases NoSQL"],
+      "utilidad": "Prepara para el rol de DBA, responsable de la información más valiosa de la empresa.",
+      "herramientas": ["SQL Server", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "semestre": 8, "nombre": "Estrategia Empresarial", "icono": "♟️",
+      "descripcion": "Enseña a analizar el entorno competitivo y a formular estrategias que den ventaja a la empresa.",
+      "temas": ["Análisis FODA", "Fuerzas de Porter", "Ventaja competitiva", "Estrategias de crecimiento", "Estrategia digital"],
+      "utilidad": "Te permite alinear la tecnología con los objetivos estratégicos del negocio."
+    },
+    {
+      "semestre": 8, "nombre": "Evaluación de Proyectos de Ingeniería", "icono": "📋",
+      "descripcion": "Enseña a determinar si un proyecto es viable técnica, económica y financieramente antes de invertir en él.",
+      "temas": ["Estudio de mercado", "Estudio técnico", "Flujo de caja del proyecto", "VAN y TIR", "Análisis de sensibilidad"],
+      "utilidad": "Te permite justificar con números la inversión en un proyecto tecnológico.",
+      "herramientas": ["Excel"]
+    },
+    {
+      "semestre": 8, "nombre": "Pasantía Profesional (300 horas)", "icono": "💼",
+      "descripcion": "Experiencia real de trabajo en una empresa o institución, donde aplicas todo lo aprendido durante 300 horas.",
+      "temas": ["Trabajo en una empresa real", "Aplicación de conocimientos", "Experiencia profesional", "Informe de pasantía"],
+      "utilidad": "Es tu primera experiencia laboral y muchas veces la puerta de entrada a tu primer empleo."
+    },
+    {
+      "semestre": 8, "nombre": "Dirección Estratégica", "icono": "🧑‍💼",
+      "descripcion": "Desarrolla el liderazgo necesario para conducir una organización hacia el cumplimiento de sus objetivos.",
+      "temas": ["Liderazgo", "Planificación estratégica", "Cuadro de mando integral", "Gestión del cambio", "Gobierno corporativo"],
+      "utilidad": "Te prepara para cargos gerenciales, como jefe de sistemas o director de tecnología (CIO)."
+    },
+    {
+      "semestre": 8, "nombre": "Electiva II", "icono": "🌟",
+      "descripcion": "Segunda materia a elección para especializarte en el área que más te apasiona.",
+      "temas": ["Elegida por el estudiante", "Profundización", "Tendencias del mercado"],
+      "utilidad": "Completa tu perfil profesional con una especialidad diferenciadora."
+    },
+
+    {
+      "semestre": 9, "nombre": "Sistemas Inteligentes e Innovación", "icono": "🤖",
+      "descripcion": "Introduce la inteligencia artificial y el aprendizaje automático aplicados a la innovación en las empresas.",
+      "temas": ["Inteligencia artificial", "Machine learning", "Redes neuronales", "Análisis predictivo", "Automatización inteligente"],
+      "utilidad": "La IA está transformando todas las industrias: aquí aprendes a aplicarla en negocios reales.",
+      "herramientas": ["Python", "scikit-learn", "TensorFlow"]
+    },
+    {
+      "semestre": 9, "nombre": "Gestión de Sistemas", "icono": "⚙️",
+      "descripcion": "Aborda cómo se gobiernan y gestionan los servicios de TI para que apoyen de forma eficiente al negocio.",
+      "temas": ["Gobierno de TI", "ITIL", "COBIT", "Gestión de servicios", "Seguridad de la información"],
+      "utilidad": "Te prepara para dirigir el área de sistemas de una organización."
+    },
+    {
+      "semestre": 9, "nombre": "Modalidad de Graduación I", "icono": "🎓",
+      "descripcion": "Inicio de tu proyecto de grado: defines el problema, investigas y planificas la solución.",
+      "temas": ["Selección del tema", "Metodología de investigación", "Marco teórico", "Perfil del proyecto"],
+      "utilidad": "Es el primer paso para obtener tu título de ingeniero."
+    },
+    {
+      "semestre": 9, "nombre": "Proyectos de Planificación Estratégica", "icono": "🗺️",
+      "descripcion": "Aplica la planificación estratégica a proyectos reales, integrando la visión del negocio y la tecnología.",
+      "temas": ["Plan estratégico", "Gestión de proyectos", "Indicadores de gestión", "Portafolio de proyectos", "Plan estratégico de TI"],
+      "utilidad": "Integra todo lo aprendido para planificar el futuro tecnológico de una organización.",
+      "herramientas": ["MS Project"]
+    },
+
+    {
+      "semestre": 10, "nombre": "Modalidad de Graduación II", "icono": "🏆",
+      "descripcion": "Culminación de tu carrera: desarrollas, presentas y defiendes tu proyecto de grado ante un tribunal.",
+      "temas": ["Desarrollo del proyecto", "Implementación", "Documentación final", "Defensa de grado"],
+      "utilidad": "¡La meta! Al aprobarla obtienes tu título de Ingeniero Informático Administrativo."
+    }
+  ]
+}

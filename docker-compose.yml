@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: malla-curricular
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      # node_modules vive solo dentro del contenedor
+      - /app/node_modules
+    environment:
+      # En Windows los cambios de archivos no llegan al contenedor sin polling
+      - CHOKIDAR_USEPOLLING=true

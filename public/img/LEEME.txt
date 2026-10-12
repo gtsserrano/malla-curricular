@@ -1,0 +1,77 @@
+Coloca aqui la foto de cada materia con EXACTAMENTE estos nombres (formato .jpg).
+Si falta una foto, la app muestra una imagen verde con el nombre de la materia.
+Para usar otro nombre o formato, agrega "imagen": "img/mi-foto.png" a esa materia en src/data/malla.json
+
+--- Semestre 1 ---
+fundamentos-de-matematica.jpg
+algebra-i.jpg
+fundamentos-de-administracion-de-empresas.jpg
+pensamiento-critico.jpg
+fundamentos-de-ti.jpg
+contabilidad-general-i.jpg
+
+--- Semestre 2 ---
+calculo-i.jpg
+algebra-ii.jpg
+teoria-de-la-organizacion.jpg
+fundamentos-de-programacion.jpg
+redes-i.jpg
+contabilidad-general-ii.jpg
+
+--- Semestre 3 ---
+calculo-ii.jpg
+estadistica-i.jpg
+interculturalidad-ciudadania-y-genero.jpg
+estructuras-de-datos.jpg
+redes-ii.jpg
+contabilidad-de-costos-i.jpg
+
+--- Semestre 4 ---
+etica-y-valores.jpg
+estadistica-ii.jpg
+programacion-aplicada.jpg
+sistemas-operativos.jpg
+matematica-financiera-i.jpg
+certificacion-idioma-ingles.jpg
+
+--- Semestre 5 ---
+investigacion-operativa-i.jpg
+analisis-estadistico-de-calidad.jpg
+bases-de-datos.jpg
+estructura-de-datos-avanzadas.jpg
+laboratorio-de-sistemas-operativos-i.jpg
+administracion-financiera-i.jpg
+
+--- Semestre 6 ---
+emprendimiento-y-gestion-de-la-innovacion.jpg
+administracion-de-recursos-humanos.jpg
+ingenieria-de-software.jpg
+laboratorio-de-sistemas-operativos-ii.jpg
+presupuesto.jpg
+analisis-para-la-toma-de-decisiones.jpg
+
+--- Semestre 7 ---
+sistemas-de-informacion.jpg
+desarrollo-de-aplicaciones-web.jpg
+virtualizacion-y-computacion-en-la-nube.jpg
+resolucion-de-problemas-y-toma-de-decisiones.jpg
+gestion-de-empresas-familiares-y-pymes.jpg
+electiva-i.jpg
+
+--- Semestre 8 ---
+gestion-de-calidad-total.jpg
+gestion-de-base-de-datos.jpg
+estrategia-empresarial.jpg
+evaluacion-de-proyectos-de-ingenieria.jpg
+pasantia-profesional-300-horas.jpg
+direccion-estrategica.jpg
+electiva-ii.jpg
+
+--- Semestre 9 ---
+sistemas-inteligentes-e-innovacion.jpg
+gestion-de-sistemas.jpg
+modalidad-de-graduacion-i.jpg
+proyectos-de-planificacion-estrategica.jpg
+
+--- Semestre 10 ---
+modalidad-de-graduacion-ii.jpg
