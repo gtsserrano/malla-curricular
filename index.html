@@ -24,8 +24,8 @@
     <!-- Puntero controlado por la mano -->
     <div id="puntero"><div class="anillo"></div></div>
 
-    <!-- Vista previa de la cámara con el esqueleto de la mano detectada (esquina) -->
-    <div id="vista-camara">
+    <!-- Vista previa de la cámara con el esqueleto de la mano detectada (oculta por defecto; la detección sigue activa) -->
+    <div id="vista-camara" class="oculto">
       <video id="camara" autoplay playsinline muted></video>
       <canvas id="esqueleto"></canvas>
     </div>

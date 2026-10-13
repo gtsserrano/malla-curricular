@@ -42,7 +42,7 @@ npm run offline    # descargar los modelos de MediaPipe para usar sin internet
 | Tecla | Acción |
 | --- | --- |
 | `F` | Pantalla completa |
-| `C` | Mostrar/ocultar la vista de la cámara |
+| `C` | Mostrar/ocultar la vista de la cámara (oculta por defecto; la detección funciona igual) |
 | `Esc` | Cerrar la tarjeta |
 
 El mouse también funciona como puntero, así puedes desarrollar sin cámara.
