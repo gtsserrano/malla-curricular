@@ -7,7 +7,7 @@ import { ajustarTextos, renderMalla } from './malla';
 import { abrirTarjeta, cerrarTarjeta, idAbierto, precargarGif } from './tarjeta3d';
 import { iniciarRastreo } from './rastreoMano';
 
-// Carrera según ?c=550 / ?c=590 (por defecto 550). En el stand se muestran solo los semestres, sin las electivas libres.
+// Carrera según ?c=550 / ?c=590 (por defecto 590). En el stand se muestran solo los semestres, sin las electivas libres.
 let codigo = codigoCarrera();
 let malla = CARRERAS[codigo];
 let celdas: HTMLElement[] = [];

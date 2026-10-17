@@ -14,7 +14,7 @@ export const NOMBRE_CORTO: Record<string, string> = {
   '590': 'Informática y Gestión',
 };
 
-export const CARRERA_POR_DEFECTO = '550';
+export const CARRERA_POR_DEFECTO = '590';
 
 export function codigoCarrera() {
   const c = new URLSearchParams(location.search).get('c') ?? '';
