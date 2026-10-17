@@ -24,12 +24,13 @@
     <!-- Puntero controlado por la mano -->
     <div id="puntero"><div class="anillo"></div></div>
 
-    <!-- Vista previa de la cámara con el esqueleto de la mano detectada (oculta por defecto; la detección sigue activa) -->
-    <div id="vista-camara" class="oculto">
+    <!-- Vista previa de la cámara con el esqueleto de la mano detectada -->
+    <div id="vista-camara">
       <video id="camara" autoplay playsinline muted></video>
       <canvas id="esqueleto"></canvas>
     </div>
-    <div id="estado">Presiona <b>F</b> para pantalla completa · <b>C</b> para mostrar/ocultar cámara</div>
+    <div id="estado">Cargando cámara…</div>
+    <button id="activar-camara" type="button" hidden>Reintentar cámara</button>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

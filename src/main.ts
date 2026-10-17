@@ -23,6 +23,7 @@ const puntero = document.getElementById('puntero')!;
 const video = document.getElementById('camara') as HTMLVideoElement;
 const vistaCamara = document.getElementById('vista-camara')!;
 const estado = document.getElementById('estado')!;
+const activarCamara = document.getElementById('activar-camara') as HTMLButtonElement;
 
 // Tiempo que hay que mantener el puntero sobre una materia para abrirla (evita aperturas accidentales)
 const TIEMPO_ESPERA_MS = 2000;
@@ -130,18 +131,42 @@ function mostrarEstado(mensaje: string, tipo: 'info' | 'ok' | 'error' = 'info') 
   estado.dataset.tipo = tipo;
 }
 
-iniciarRastreo(video, document.getElementById('esqueleto') as HTMLCanvasElement, {
-  onPosicion: (x, y, esPuno) => {
-    vistaCamara.classList.add('con-mano');
-    moverPuntero(x, y, esPuno);
-  },
-  onPerdida: () => {
-    vistaCamara.classList.remove('con-mano');
-    manoPerdida();
-  },
-  onEstado: mostrarEstado,
-}).catch((err) => {
-  console.error(err);
-  vistaCamara.classList.add('oculto');
-  mostrarEstado(err.message, 'error');
-});
+let iniciandoCamara = false;
+let camaraActiva = false;
+
+async function iniciarCamara() {
+  if (iniciandoCamara || camaraActiva) return;
+  iniciandoCamara = true;
+  activarCamara.hidden = true;
+  try {
+    await iniciarRastreo(video, document.getElementById('esqueleto') as HTMLCanvasElement, {
+      onPosicion: (x, y, esPuno) => {
+        if (!vistaCamara.classList.contains('con-mano')) {
+          mostrarEstado('Mantén el dedo sobre una materia 2 segundos · Cierra el puño para volver', 'ok');
+        }
+        vistaCamara.classList.add('con-mano');
+        moverPuntero(x, y, esPuno);
+      },
+      onPerdida: () => {
+        if (vistaCamara.classList.contains('con-mano')) {
+          mostrarEstado('Levanta una mano frente a la cámara 👋', 'ok');
+        }
+        vistaCamara.classList.remove('con-mano');
+        manoPerdida();
+      },
+      onEstado: mostrarEstado,
+    });
+    camaraActiva = true;
+    vistaCamara.classList.remove('oculto');
+  } catch (err) {
+    console.error(err);
+    vistaCamara.classList.add('oculto');
+    mostrarEstado((err as Error).message, 'error');
+    activarCamara.hidden = false;
+  } finally {
+    iniciandoCamara = false;
+  }
+}
+
+activarCamara.addEventListener('click', iniciarCamara);
+void iniciarCamara();

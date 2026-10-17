@@ -11,7 +11,7 @@
       "creditos": 10,
       "requisitos": null,
       "icono": "➗",
-      "descripcion": "Complementar las habilidades relacionadas con el pensamiento numérico, analítico y uso de variables que inicialmente fueron desarrolladas en el colegio.",
+      "descripcion": "Aquí empiezas a convertir números, ecuaciones y patrones en herramientas para resolver problemas reales. Es la base matemática que acompaña toda la carrera.",
       "temas": [
         "Conjuntos numéricos",
         "Regla de tres simple y compuesta.",
@@ -29,7 +29,7 @@
       "creditos": 10,
       "requisitos": null,
       "icono": "🔣",
-      "descripcion": "Conocer el lenguaje matemático y las diferencias con el lenguaje habitual.",
+      "descripcion": "La lógica, los conjuntos y las funciones te enseñan a pensar con precisión. Esta materia transforma ideas abstractas en razonamientos que puedes demostrar y aplicar.",
       "temas": [
         "Lógica proposicional y métodos de demostración",
         "Conjuntos y relaciones",
@@ -47,7 +47,7 @@
       "creditos": 8,
       "requisitos": null,
       "icono": "📘",
-      "descripcion": "Formar al futuro Ingeniero de Sistemas e Inteligencia Artificial en los fundamentos de la Teoría General de Sistema, desarrollando competencias para analizar, modelar, implementar y gestionar sistemas complejos desde una perspectiva holística…",
+      "descripcion": "Mira más allá de las piezas sueltas: aprende a reconocer cómo interactúan las partes de un sistema y cómo un cambio puede transformar el conjunto.",
       "temas": [
         "Principios de la Teoría General de Sistemas",
         "Dinámica y retroalimentación de sistemas",
@@ -65,7 +65,7 @@
       "creditos": 10,
       "requisitos": null,
       "icono": "💻",
-      "descripcion": "Proporcionar conocimientos sobre las tecnologías de información y comunicación.",
+      "descripcion": "Descubre qué hay detrás de la tecnología cotidiana: computadoras, datos, software y redes. Aquí construyes el mapa general del mundo digital.",
       "temas": [
         "Introducción a las tecnologías de información y comunicación.",
         "Arquitectura de una computadora.",
@@ -82,7 +82,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "🧠"
+      "icono": "🧠",
+      "descripcion": "Aprende a cuestionar ideas, evaluar evidencias y defender tus conclusiones. El pensamiento crítico te ayuda a tomar mejores decisiones dentro y fuera de la tecnología."
     },
     {
       "semestre": 1,
@@ -92,7 +93,8 @@
       "horasPracticas": 2,
       "creditos": 10,
       "requisitos": null,
-      "icono": "🏢"
+      "icono": "🏢",
+      "descripcion": "Conoce cómo se organiza y dirige una empresa. Entender sus objetivos y procesos te permitirá crear soluciones tecnológicas que respondan a necesidades reales."
     },
     {
       "semestre": 2,
@@ -103,7 +105,7 @@
       "creditos": 10,
       "requisitos": "MC110",
       "icono": "📈",
-      "descripcion": "Engloba todos los aspectos del conocimiento matemático, su interconexión y su aplicación.",
+      "descripcion": "Explora el cambio con límites y derivadas. El cálculo te permite modelar fenómenos, entender tendencias y encontrar mejores soluciones.",
       "temas": [
         "Aspectos básicos del cálculo",
         "Funciones compuestas",
@@ -121,7 +123,7 @@
       "creditos": 8,
       "requisitos": "MC115",
       "icono": "🧮",
-      "descripcion": "Aplicar conocimientos básicos sobre matrices, sistemas de ecuaciones lineales, determinantes, espacios vectoriales y transformaciones lineales.",
+      "descripcion": "Matrices, vectores y sistemas de ecuaciones forman un lenguaje esencial para la computación y la inteligencia artificial. Aquí aprendes a usarlo para modelar problemas.",
       "temas": [
         "Matrices y determinantes",
         "Sistemas de ecuaciones lineales",
@@ -139,7 +141,7 @@
       "creditos": 10,
       "requisitos": null,
       "icono": "📘",
-      "descripcion": "La asignatura tiene como objetivo que el estudiante comprenda y aplique los fundamentos de la programación estructurada y orientada a objetos, desarrollando habilidades para diseñar algoritmos eficientes, manipular estructuras de datos y resolver problemas…",
+      "descripcion": "Da tus primeros pasos creando algoritmos y programas, mientras descubres cómo los datos y las ideas de IA pueden ayudar a resolver problemas concretos.",
       "temas": [
         "Fundamentos de programación y estructuras de datos",
         "tipos de datos, operadores, estructuras de control, funciones y modularidad.",
@@ -157,7 +159,7 @@
       "creditos": 10,
       "requisitos": "TR110",
       "icono": "🌐",
-      "descripcion": "Los objetivos principales de esta materia son comprender los conceptos básicos de las Redes de Computadoras, así como los protocolos y estándares establecidos.",
+      "descripcion": "Sigue el viaje de los datos desde una computadora hasta otra. Aprenderás cómo funcionan las redes y qué hace posible la comunicación digital.",
       "temas": [
         "Redes de computadoras e Internet.",
         "Fundamentos y la transmisión de datos (medios y topologías), clases de redes y los protocolos que las rigen.",
@@ -175,7 +177,7 @@
       "creditos": 10,
       "requisitos": "TR110",
       "icono": "📘",
-      "descripcion": "En la primera parte del curso se establecen los fundamentos teóricos y las herramientas de análisis necesarias para la Electrónica Digital.",
+      "descripcion": "Desde el sistema binario hasta los circuitos lógicos, descubre cómo las señales eléctricas se convierten en decisiones dentro de un dispositivo digital.",
       "temas": [
         "Sistemas de numeración.",
         "Álgebra de Boole.",
@@ -192,7 +194,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "Explora tus derechos, responsabilidades y formas de participar en la sociedad. La tecnología también necesita profesionales conscientes de su impacto humano."
     },
     {
       "semestre": 3,
@@ -203,7 +206,7 @@
       "creditos": 8,
       "requisitos": "MC120",
       "icono": "∫",
-      "descripcion": "En primer lugar, se busca englobar los aspectos fundamentales del cálculo, comprendiendo su estructura, interconexión y aplicación en distintos contextos matemáticos y profesionales.",
+      "descripcion": "Profundiza en las herramientas del cálculo para describir cambios y acumulaciones. Las funciones y sus modelos abren nuevas formas de analizar problemas.",
       "temas": [
         "Funciones y límites",
         "Se analizan los límites de funciones algebraicas y trascendentes, así como la identificación de asíntotas horizontales, verticales y…",
@@ -221,7 +224,7 @@
       "creditos": 10,
       "requisitos": "MC125",
       "icono": "📉",
-      "descripcion": "Desarrollar la capacidad del estudiante para organizar, representar y analizar datos cuantitativos y cualitativos mediante herramientas de la estadística descriptiva, con el fin de interpretar y comunicar información útil para la toma de decisiones en…",
+      "descripcion": "Convierte conjuntos de datos en información comprensible. Aprende a resumir, visualizar e interpretar resultados antes de sacar conclusiones.",
       "temas": [
         "Estadística descriptiva",
         "Medidas de tendencia central y dispersión",
@@ -239,7 +242,7 @@
       "creditos": 10,
       "requisitos": "SC120",
       "icono": "📘",
-      "descripcion": "La asignatura desarrolla en el estudiante la capacidad de manipular, procesar y analizar datos utilizando bibliotecas especializadas de Python (NumPy, Pandas y SciPy), generando estructuras multidimensionales (arrays, Series y DataFrame) y aplicando técnicas…",
+      "descripcion": "Lleva tu programación al trabajo con datos reales: organízalos, analízalos y presenta hallazgos claros con herramientas de computación científica.",
       "temas": [
         "Análisis de datos con NumPy y Pandas",
         "Computación científica con SciPy",
@@ -257,7 +260,7 @@
       "creditos": 10,
       "requisitos": "TR120",
       "icono": "📡",
-      "descripcion": "Analizar y comprender los conceptos teóricos fundamentales de los protocolos y las redes de computadoras.",
+      "descripcion": "Pasa de entender una red a configurarla. Conmutación, enrutamiento y protocolos te muestran cómo mantener conectados sistemas cada vez más complejos.",
       "temas": [
         "Introducción a redes conmutadas",
         "Configuración básica de la conmutación",
@@ -275,7 +278,7 @@
       "creditos": 10,
       "requisitos": "MR120",
       "icono": "📘",
-      "descripcion": "Comprender la organización básica del hardware de la computadora y la funcionalidad de las técnicas algorítmicas desarrolladas para un eficiente uso de sus recursos.",
+      "descripcion": "Acércate a la arquitectura de los computadores y sus componentes digitales. Verás cómo se representa y procesa la información dentro de una máquina.",
       "temas": [
         "Conceptos básicos del computador —Definición y componentes fundamentales",
         "representación de la información (binario, hexadecimal, codificaciones)",
@@ -292,7 +295,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "⭐"
+      "icono": "⭐",
+      "descripcion": "Un espacio para orientar tu formación hacia un tema que te interese. La materia concreta depende de la oferta de asignaturas electivas."
     },
     {
       "semestre": 4,
@@ -303,7 +307,7 @@
       "creditos": 8,
       "requisitos": "MC210",
       "icono": "📘",
-      "descripcion": "Formular, clasificar, analizar y resolver Ecuaciones Diferenciales ordinarias y parciales, utilizando métodos analíticos, numéricos y computacionales, con un énfasis particular en la aplicación de técnicas de Inteligencia Artificial para la modelización…",
+      "descripcion": "Aprende a describir fenómenos que cambian con el tiempo mediante ecuaciones diferenciales y otras herramientas matemáticas de modelación.",
       "temas": [
         "Teoría general de las ecuaciones diferenciales.",
         "Ecuaciones diferenciales ordinarias de primer orden.",
@@ -321,7 +325,7 @@
       "creditos": 8,
       "requisitos": "MC215",
       "icono": "📐",
-      "descripcion": "Aplicar técnicas de análisis estadístico para resolver problemas en contextos de ingeniería y ciencias empresariales, fortaleciendo la toma de decisiones basada en datos.",
+      "descripcion": "Da el salto de describir datos a hacer inferencias. El muestreo y las pruebas de hipótesis te ayudan a decidir con evidencia y reconocer la incertidumbre.",
       "temas": [
         "Métodos de muestreo, Estimación de Parámetros.",
         "Pruebas de Hipótesis.",
@@ -339,7 +343,7 @@
       "creditos": 10,
       "requisitos": "SC120",
       "icono": "📘",
-      "descripcion": "Comprender y aplicar los conceptos fundamentales de la Programación Orientada a Objetos (POO) —clases, objetos, encapsulamiento, herencia y polimorfismo— para modelar, diseñar y construir software básico funcional y modular.",
+      "descripcion": "Construye programas a partir de objetos que colaboran entre sí. Organizar el código en clases facilita crear sistemas más claros y fáciles de mantener.",
       "temas": [
         "Clases, objetos y métodos",
         "Encapsulamiento y abstracción",
@@ -357,7 +361,7 @@
       "creditos": 10,
       "requisitos": "TR210",
       "icono": "📘",
-      "descripcion": "La asignatura Sistemas Operativos I formará al estudiante para comprender, diseñar y diagnosticar los principios y componentes fundamentales de los sistemas operativos de propósito general, tanto desde una perspectiva teórica como práctica.",
+      "descripcion": "Descubre el software que coordina memoria, procesos y dispositivos. Entender un sistema operativo es entender cómo un computador trabaja por dentro.",
       "temas": [
         "Fundamentos y evolución de los sistemas operativos",
         "Funciones básicas y objetivos principales.",
@@ -374,7 +378,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "BA110",
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "Las organizaciones dependen de las personas que las forman. Esta materia explora cómo atraer, desarrollar y acompañar talento para alcanzar objetivos comunes."
     },
     {
       "semestre": 4,
@@ -384,7 +389,8 @@
       "horasPracticas": 0,
       "creditos": 0,
       "requisitos": null,
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "La certificación de inglés acredita una habilidad clave para leer documentación, comunicar ideas y moverte con soltura en entornos tecnológicos internacionales."
     },
     {
       "semestre": 4,
@@ -394,7 +400,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "🌟"
+      "icono": "🌟",
+      "descripcion": "Amplía tu recorrido con una asignatura optativa. Puedes profundizar en un área de interés según las opciones que ofrezca la carrera."
     },
     {
       "semestre": 5,
@@ -405,7 +412,7 @@
       "creditos": 10,
       "requisitos": "MC225",
       "icono": "📘",
-      "descripcion": "Comprender los fundamentos, características y metodología de la Investigación de Operaciones, reconociendo su aplicación en la toma de decisiones y en la optimización de sistemas complejos.",
+      "descripcion": "Usa modelos de optimización y herramientas de IA para elegir entre alternativas, distribuir recursos y resolver decisiones complejas con criterio.",
       "temas": [
         "Generalidades y metodología de la investigación de Operaciones.",
         "Metodología de la investigación operativa.",
@@ -423,7 +430,7 @@
       "creditos": 10,
       "requisitos": "SC210",
       "icono": "📘",
-      "descripcion": "El estudiante analiza los fundamentos teóricos de los modelos de datos relacionales y no relacionales, diseñando esquemas eficientes mediante el modelo entidad-relación y técnicas de normalización.",
+      "descripcion": "Diseña la estructura donde viven los datos de una aplicación. Compara bases relacionales y no relacionales para elegir cómo guardar y consultar información.",
       "temas": [
         "Fundamentos de bases de datos y modelos relacionales",
         "Claves primarias y foráneas.",
@@ -441,7 +448,7 @@
       "creditos": 10,
       "requisitos": "SC222",
       "icono": "📘",
-      "descripcion": "El estudiante modela y aplica estructuras de datos complejas como base para la solución de problemas computacionales, comprendiendo y utilizando una amplia gama de estructuras fundamentales y avanzadas.",
+      "descripcion": "Explora estructuras y algoritmos que permiten manejar información a gran escala. Elegir bien cómo organizar los datos puede transformar el rendimiento de una solución de IA.",
       "temas": [
         "Estructuras de datos lineales y no lineales",
         "Análisis de eficiencia con notación Big O",
@@ -459,7 +466,7 @@
       "creditos": 8,
       "requisitos": "SC224",
       "icono": "📘",
-      "descripcion": "Dominar la administración avanzada de servidores y la seguridad en entornos de red, configurando y gestionando servicios críticos en plataformas Windows Server y Linux.",
+      "descripcion": "Profundiza en la administración de sistemas operativos y servicios. Aprende a mantener entornos de cómputo seguros, conectados y disponibles.",
       "temas": [
         "Infraestructura y servicios de red",
         "Configuración de servicios esenciales",
@@ -477,7 +484,7 @@
       "creditos": 10,
       "requisitos": "MR210",
       "icono": "📘",
-      "descripcion": "Comprender los conceptos fundamentales de la robótica inteligente.",
+      "descripcion": "Une sensores, movimiento y programación para comprender cómo actúa un robot. La robótica convierte modelos y decisiones en acciones en el mundo físico.",
       "temas": [
         "Fundamentos de la robótica inteligente",
         "Percepción robótica",
@@ -494,7 +501,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "Personaliza tu formación con otra asignatura optativa y conecta lo aprendido con un campo que quieras explorar más a fondo."
     },
     {
       "semestre": 6,
@@ -504,7 +512,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC215",
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "La lógica matemática ofrece reglas para representar conocimiento y razonar con claridad. Es un puente natural hacia los sistemas inteligentes."
     },
     {
       "semestre": 6,
@@ -515,7 +524,7 @@
       "creditos": 10,
       "requisitos": "SC310",
       "icono": "📘",
-      "descripcion": "Comprender y describir las funciones avanzadas de operación y administración de un Sistema Gestor de Bases de Datos (SGBD) en diversos entornos.",
+      "descripcion": "Aprende a administrar bases de datos más allá del diseño inicial: rendimiento, disponibilidad y organización para que la información siga siendo útil y confiable.",
       "temas": [
         "Optimización y administración de SGBD",
         "Bases de datos distribuidas y arquitecturas",
@@ -533,7 +542,7 @@
       "creditos": 10,
       "requisitos": "SC312",
       "icono": "📘",
-      "descripcion": "Comprender y aplicar los conceptos de integración de servicios con aplicaciones móviles y APPS.",
+      "descripcion": "Imagina servicios que acompañan a las personas en movimiento. La computación móvil y ubicua combina dispositivos, conectividad y aplicaciones presentes en la vida diaria.",
       "temas": [
         "Fundamentos de la computación móvil y ubicua",
         "Redes móviles y comunicaciones inalámbricas",
@@ -551,7 +560,7 @@
       "creditos": 10,
       "requisitos": "SC222",
       "icono": "📘",
-      "descripcion": "Conocerá los modelos de proceso para desarrollar software y la selección del más adecuado.",
+      "descripcion": "Transforma una necesidad en un plan de software. Requisitos, procesos y trabajo en equipo te ayudan a construir soluciones con método.",
       "temas": [
         "Proceso de construcción del software.",
         "Normas y estándares.",
@@ -569,7 +578,7 @@
       "creditos": 8,
       "requisitos": "MC225",
       "icono": "📘",
-      "descripcion": "El estudiante desarrolla conocimientos y habilidades en matemáticas financieras, economía aplicada y contabilidad para la evaluación de proyectos privados.",
+      "descripcion": "Aprende a convertir una idea en un proyecto evaluable. Analiza costos, mercados y viabilidad para decidir si vale la pena llevarla adelante.",
       "temas": [
         "Fundamentos financieros y matemáticos",
         "Economía aplicada y análisis de mercados",
@@ -587,7 +596,7 @@
       "creditos": 8,
       "requisitos": "SC314",
       "icono": "📘",
-      "descripcion": "El estudiante comprende y aplica los principios fundamentales de la programación paralela y distribuida, diseñando y optimizando soluciones de alto rendimiento para el procesamiento de grandes volúmenes de datos y la computación intensiva.",
+      "descripcion": "Cuando una sola máquina no basta, el trabajo se reparte. Explora cómo coordinar tareas y datos entre procesadores y sistemas distribuidos.",
       "temas": [
         "Fundamentos de la programación paralela y distribuida",
         "modelos de programación (memoria compartida y distribuida), Ley de Amdahl y Ley de Gustafson.",
@@ -605,7 +614,7 @@
       "creditos": 8,
       "requisitos": "MC315",
       "icono": "📘",
-      "descripcion": "Identificar las variables y parámetros clave que determinan el comportamiento de un sistema, reconociendo su influencia en la dinámica del mismo.",
+      "descripcion": "Crea modelos para ensayar escenarios antes de actuar. La simulación, apoyada por técnicas de IA, permite estudiar sistemas complejos sin intervenir directamente en ellos.",
       "temas": [
         "Introducción a la simulación, componentes de un sistema.",
         "Generación de números pseudoaleatorios.",
@@ -623,7 +632,7 @@
       "creditos": 10,
       "requisitos": "SC320",
       "icono": "🕸",
-      "descripcion": "Aplicar una arquitectura web empresarial para el desarrollo de aplicaciones.",
+      "descripcion": "Diseña experiencias que viven en la web, desde la interfaz hasta los servicios que la sostienen. Une desarrollo, seguridad y despliegue en aplicaciones completas.",
       "temas": [
         "Fundamentos del Desarrollo Web y Frontend",
         "Backend y Servicios en la Nube",
@@ -641,7 +650,7 @@
       "creditos": 10,
       "requisitos": "SC310",
       "icono": "📘",
-      "descripcion": "Comprende y aplicar los fundamentos del análisis y diseño de sistemas complejos, integrando principios de la teoría general de sistemas y metodologías modernas de modelado.",
+      "descripcion": "Escucha el problema, representa sus procesos y diseña una solución coherente. Es el puente entre lo que una organización necesita y el sistema que se construirá.",
       "temas": [
         "Fundamentos del análisis y diseño de sistemas",
         "Modelado UML",
@@ -659,7 +668,7 @@
       "creditos": 10,
       "requisitos": "SC322",
       "icono": "☁️",
-      "descripcion": "Comprender los principios y arquitecturas de la virtualización y la computación en la nube, incluyendo modelos de servicio (IaaS, PaaS, SaaS), modelos de despliegue y tecnologías de virtualización de cómputo, red y almacenamiento.",
+      "descripcion": "Descubre cómo crear y administrar entornos de cómputo flexibles en la nube. Virtualización y servicios cloud permiten escalar aplicaciones y recursos según la demanda.",
       "temas": [
         "Fundamentos y modelos",
         "modelos de servicio y despliegue cloud",
@@ -677,7 +686,7 @@
       "creditos": 10,
       "requisitos": "SC326",
       "icono": "📘",
-      "descripcion": "Conceptualizar la calidad, la Ingeniería de Calidad del Software, y las pruebas del Software.",
+      "descripcion": "Lleva la ingeniería de software hacia la calidad: pruebas, estándares y métricas para comprobar que una solución funciona y puede seguir mejorando.",
       "temas": [
         "Calidad y estándares",
         "Fundamentos de pruebas",
@@ -694,7 +703,8 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘"
+      "icono": "📘",
+      "descripcion": "La última electiva te permite profundizar en una especialidad o descubrir un tema nuevo, según la oferta disponible de la carrera."
     },
     {
       "semestre": 8,
@@ -705,7 +715,7 @@
       "creditos": 10,
       "requisitos": "SC328",
       "icono": "📘",
-      "descripcion": "Desarrollar en el estudiante las capacidades para diseñar, estructurar y evaluar proyectos de inversión desde una perspectiva integral, considerando las dimensiones de mercado, técnica, organizacional, legal, ambiental, social y financiera.",
+      "descripcion": "Da forma completa a un proyecto: plantea objetivos, estudia su viabilidad y prepara una propuesta que pueda sostenerse en la práctica.",
       "temas": [
         "Concepto de Proyecto.",
         "La Formulación de Proyectos y Planificación.",
@@ -723,7 +733,7 @@
       "creditos": 10,
       "requisitos": "MC327",
       "icono": "📘",
-      "descripcion": "Objetivo.",
+      "descripcion": "Entra al aprendizaje automático: entrena modelos, evalúa resultados y descubre cómo encontrar patrones en datos para hacer predicciones útiles.",
       "temas": [
         "Aprendizaje supervisado y evaluación de modelos",
         "regresión lineal y regularizada",
@@ -741,7 +751,7 @@
       "creditos": 10,
       "requisitos": "SC410",
       "icono": "📘",
-      "descripcion": "Diseñar e implementar soluciones robustas y escalables para el procesamiento y análisis de datos a gran escala, integrando técnicas de streaming en tiempo real, arquitecturas de almacenamiento (Data Lakes) y prácticas de gobierno de datos que garanticen…",
+      "descripcion": "Trabaja con grandes volúmenes de información y sigue su recorrido desde la captura hasta el análisis. La ciencia de datos convierte datos dispersos en decisiones.",
       "temas": [
         "Fundamentos y arquitectura de datos",
         "Procesamiento por lotes y en tiempo real",
@@ -759,7 +769,7 @@
       "creditos": 10,
       "requisitos": "SC414",
       "icono": "📘",
-      "descripcion": "La materia contribuye al perfil del graduado conceptualizar (teoría de amenazas, criptografía aplicada, fundamentos de ML/IA para seguridad), realizar prodedimientos (diseño e implementación de pipelines de detección, MLOps para seguridad, orquestación SOAR)…",
+      "descripcion": "Protege sistemas conectados e inteligentes frente a riesgos reales. Aprende a identificar amenazas y diseñar defensas para datos, servicios y modelos.",
       "temas": [
         "Fundamentos y Marco Normativo",
         "modelos de amenaza",
@@ -777,7 +787,7 @@
       "creditos": 0,
       "requisitos": "SC322",
       "icono": "💼",
-      "descripcion": "La Pasantía Profesional y Social permite al estudiante aplicar y consolidar conocimientos teóricos en un entorno real, adquiriendo experiencia laboral práctica invaluable.",
+      "descripcion": "Lleva lo aprendido a un entorno profesional durante 300 horas de práctica. Es la oportunidad de colaborar en problemas reales y conocer cómo trabaja un equipo.",
       "temas": [
         "300 horas reloj realizadas en instituciones privadas o publicas en áreas afines a su formación."
       ],
@@ -792,7 +802,7 @@
       "creditos": 8,
       "requisitos": "MC315",
       "icono": "📘",
-      "descripcion": "Desarrolla en los estudiantes la capacidad de gestionar proyectos de innovación tecnológica y emprendimiento, desde la identificación de oportunidades hasta la dirección de proyectos y la creación de startups, integrando herramientas digitales, metodologías…",
+      "descripcion": "Convierte una oportunidad en una propuesta: explora necesidades, prueba ideas y diseña modelos de negocio para llevar nuevas soluciones al mundo.",
       "temas": [
         "Ecosistema de innovación",
         "Identificación de oportunidades",
@@ -810,7 +820,7 @@
       "creditos": 8,
       "requisitos": "SC422-SC420",
       "icono": "📘",
-      "descripcion": "La asignatura desarrolla en el estudiante competencias para diseñar, implementar y evaluar proyectos de inteligencia artificial a lo largo de su ciclo de vida, integrando conceptos de Machine Learning, Deep Learning, ciencia de datos, y prácticas de MLOps.",
+      "descripcion": "Profundiza en proyectos de IA desde los datos y los modelos hasta su despliegue. También examina riesgos, gobernanza y uso responsable.",
       "temas": [
         "Fundamentos y Gobernanza",
         "Gestión de riesgos y control de versiones.",
@@ -828,7 +838,7 @@
       "creditos": 8,
       "requisitos": "SC424-SC422",
       "icono": "📘",
-      "descripcion": "Capacitar al estudiante para formular y planificar un proyecto de investigación aplicada en Ingeniería de Sistemas e Inteligencia Artificial, mediante la elaboración del plan de trabajo y un avance preliminar del Proyecto de Grado, integrando criterios…",
+      "descripcion": "Empieza a construir tu proyecto de grado: define una pregunta, elige un método y prepara un plan de trabajo que pueda convertirse en una investigación o solución sólida.",
       "temas": [
         "Fundamentos metodológicos y epistemológicos — Metodología de la investigación",
         "paradigmas y enfoques (cuantitativo, cualitativo, mixto)",
@@ -846,7 +856,7 @@
       "creditos": 8,
       "requisitos": "SC410-SC416",
       "icono": "⚙️",
-      "descripcion": "El curso Gestion de Sistemas (SC510) tiene por objetivo que el estudiante adquiera conocimientos y habilidades para planificar, ejecutar y gestionar proyectos de desarrollo de sistemas aplicando metodologías ágiles, principios de ingeniería de sistemas y…",
+      "descripcion": "Aprende a planificar y coordinar sistemas dentro de una organización. Reúne requisitos, diseño y gestión para que la tecnología responda a objetivos concretos.",
       "temas": [
         "Fundamentos y planificación de sistemas",
         "ingeniería de requisitos",
@@ -864,7 +874,7 @@
       "creditos": 8,
       "requisitos": "SC429",
       "icono": "📘",
-      "descripcion": "Formará profesionales capaces de diseñar, liderar y evaluar proyectos de investigación e innovación tecnológica con alcance nacional e internacional, integrando estándares internacionales de gestión de proyectos, metodologías científicas para la generación de…",
+      "descripcion": "Explora tecnologías emergentes a través de proyectos con alcance amplio. Investiga una oportunidad, diseña una propuesta y comunica su posible impacto.",
       "temas": [
         "Fundamentos de investigación y diseño de proyectos",
         "revisión bibliográfica y estado del arte",
@@ -882,7 +892,7 @@
       "creditos": 8,
       "requisitos": null,
       "icono": "⚖️",
-      "descripcion": "La asignatura desarrolla en el estudiante la comprensión crítica de los principios éticos, la deontología profesional y el marco jurídico que regulan el ejercicio de la ingeniería, con énfasis en la relación entre ciencia, tecnología y sociedad.",
+      "descripcion": "Analiza las decisiones profesionales desde sus consecuencias humanas. La ética ayuda a construir tecnología con responsabilidad, respeto y criterio.",
       "temas": [
         "Fundamentos y evolución",
         "evolución histórica",
@@ -900,7 +910,7 @@
       "creditos": 10,
       "requisitos": "SC515-SC428-SC427-ID310",
       "icono": "📘",
-      "descripcion": "Supervisar y acompañar el desarrollo del Proyecto de Grado, garantizando el cumplimiento de los requisitos reglamentarios y la calidad científica de los entregables mediante asesoría metodológica, control de hitos y evaluación formativa.",
+      "descripcion": "Completa tu proyecto de grado: ejecuta el plan, documenta resultados y prepara una defensa clara de lo que construiste o investigaste.",
       "temas": [
         "Planificación del proyecto de grado",
         "Ejecución y seguimiento",

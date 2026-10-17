@@ -38,10 +38,8 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
     </figure>
     <div class="info">
       <p class="datos-plan">${m.sigla ? `${escapar(m.sigla)} · ` : ''}${m.creditos} créditos · ${m.horasTeoricas} h teóricas y ${m.horasPracticas} h prácticas por semana</p>
-      ${m.requisitos ? `<p class="requisitos"><strong>Requisitos:</strong> ${escapar(m.requisitos)}</p>` : ''}
-      ${m.descripcion ? `<p class="descripcion">${escapar(m.descripcion)}</p>` : '<p class="descripcion">El documento solo detalla esta asignatura en el plan de estudios.</p>'}
+      <section><h4>De qué trata</h4><p class="descripcion">${escapar(m.descripcion ?? '')}</p></section>
       ${m.temas?.length ? `<section><h4>Contenidos mínimos</h4><ul>${lista(m.temas)}</ul></section>` : ''}
-      ${m.utilidad ? `<section><h4>Aporte al perfil profesional</h4><p>${escapar(m.utilidad)}</p></section>` : ''}
       ${
         m.herramientas?.length
           ? `<section><h4>Herramientas</h4><div class="chips">${m.herramientas.map((h) => `<span>${escapar(h)}</span>`).join('')}</div></section>`
