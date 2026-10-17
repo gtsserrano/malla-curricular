@@ -6,8 +6,8 @@
 <style>
   @page { size: A4 landscape; margin: 12mm; }
   body { margin: 0; display: flex; gap: 12mm; justify-content: center; align-items: center; min-height: 100vh; background: #eef2ea; }
-  svg { width: 120mm; height: auto; filter: drop-shadow(0 4px 12px rgb(0 0 0 / 0.15)); }
-  @media print { body { background: none; min-height: auto; } svg { filter: none; outline: 0.3mm solid #ccc; border-radius: 6mm; } }
+  body > svg { width: 120mm; height: auto; filter: drop-shadow(0 4px 12px rgb(0 0 0 / 0.15)); }
+  @media print { body { background: none; min-height: auto; } body > svg { filter: none; outline: 0.3mm solid #ccc; border-radius: 6mm; } }
 </style>
 </head>
 <body>
