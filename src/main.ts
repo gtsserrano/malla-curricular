@@ -2,16 +2,43 @@ import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 import './styles.css';
-import { carreraActual } from './carreras';
+import { CARRERAS, NOMBRE_CORTO, codigoCarrera } from './carreras';
 import { ajustarTextos, renderMalla } from './malla';
 import { abrirTarjeta, cerrarTarjeta, idAbierto, precargarGif } from './tarjeta3d';
 import { iniciarRastreo } from './rastreoMano';
 
 // Carrera según ?c=550 / ?c=590 (por defecto 550). En el stand se muestran solo los semestres, sin las electivas libres.
-const malla = carreraActual();
-document.title = `Malla Curricular · ${malla.carrera} · UPSA`;
-renderMalla(malla);
-ajustarTextos();
+let codigo = codigoCarrera();
+let malla = CARRERAS[codigo];
+let celdas: HTMLElement[] = [];
+
+/** Botones del encabezado para cambiar de carrera; se activan con la mano igual que las materias */
+function dibujarSelector() {
+  let nav = document.getElementById('carreras');
+  if (!nav) {
+    nav = document.createElement('nav');
+    nav.id = 'carreras';
+  }
+  nav.innerHTML = Object.keys(CARRERAS)
+    .map((c, i) => `<button type="button" data-carrera="${c}" class="${c === codigo ? 'activa' : ''}"><kbd>${i + 1}</kbd>${NOMBRE_CORTO[c] ?? c}</button>`)
+    .join('');
+  document.getElementById('encabezado')!.appendChild(nav);
+}
+
+/** Muestra otra carrera SIN recargar la página: así no se sale de pantalla completa ni se reinicia la cámara */
+function mostrarCarrera(nuevo: string) {
+  codigo = nuevo;
+  malla = CARRERAS[codigo];
+  history.replaceState(null, '', `?c=${codigo}`);
+  document.title = `Malla Curricular · ${malla.carrera} · UPSA`;
+  document.getElementById('etiquetas')!.replaceChildren();
+  document.getElementById('tablero')!.replaceChildren();
+  renderMalla(malla);
+  dibujarSelector();
+  ajustarTextos();
+  celdas = [...document.querySelectorAll<HTMLElement>('.materia, #carreras button:not(.activa)')];
+}
+mostrarCarrera(codigo);
 // Recalcular cuando cargue la fuente Poppins y cuando cambie el tamaño de la pantalla
 document.fonts.ready.then(ajustarTextos);
 let ajustePendiente = 0;
@@ -32,8 +59,6 @@ const TIEMPO_ESPERA_MS = 2000;
 const TOLERANCIA_PX = 30;
 // Salidas breves del cuadro o pérdidas momentáneas de la mano no reinician la carga
 const GRACIA_MS = 400;
-
-const celdas = [...document.querySelectorAll<HTMLElement>('.materia')];
 
 let px = 0;
 let py = 0;
@@ -105,7 +130,8 @@ function bucle() {
   if (candidata && !idAbierto() && ahora - desdeCandidata >= TIEMPO_ESPERA_MS) {
     const celda = candidata;
     elegir(null, ahora);
-    abrirTarjeta(celda, malla);
+    if (celda.dataset.carrera) mostrarCarrera(celda.dataset.carrera);
+    else abrirTarjeta(celda, malla);
   }
 
   const progreso = candidata ? Math.min(1, (ahora - desdeCandidata) / TIEMPO_ESPERA_MS) : 0;
@@ -125,6 +151,12 @@ addEventListener('keydown', (e) => {
   }
   if (e.key.toLowerCase() === 'c') vistaCamara.classList.toggle('oculto');
   if (e.key === 'Escape') cerrarTarjeta();
+  // 1, 2… = cambiar de carrera
+  const elegida = Object.keys(CARRERAS)[Number(e.key) - 1];
+  if (elegida && elegida !== codigo) {
+    cerrarTarjeta();
+    mostrarCarrera(elegida);
+  }
 });
 
 function mostrarEstado(mensaje: string, tipo: 'info' | 'ok' | 'error' = 'info') {
