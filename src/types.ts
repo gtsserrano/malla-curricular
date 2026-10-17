@@ -1,13 +1,20 @@
 export interface Materia {
   nombre: string;
   semestre: number;
+  /** Datos oficiales del plan de estudio */
+  sigla: string;
+  creditos: number;
+  horasTeoricas: number;
+  horasPracticas: number;
+  /** Siglas de los prerrequisitos separadas por "-" (vacío si no tiene) */
+  requisitos: string;
   descripcion: string;
   /** "¿Qué aprenderás?" */
   temas: string[];
   /** "¿Para qué te sirve?" */
   utilidad: string;
   herramientas?: string[];
-  /** Emoji que se muestra mientras no exista la foto */
+  /** Emoji cuya versión animada (GIF de Noto Animated Emoji) se muestra mientras no exista la foto */
   icono?: string;
   /** Opcional: si no se indica, se usa img/<id>.jpg */
   imagen?: string;
@@ -16,7 +23,22 @@ export interface Materia {
 export interface Malla {
   carrera: string;
   universidad: string;
+  plan?: string;
   materias: Materia[];
+}
+
+/** "⚖️" -> "2696_fe0f": código con el que Google publica cada emoji animado */
+export function codigoEmoji(emoji: string) {
+  return [...emoji].map((c) => c.codePointAt(0)!.toString(16)).join('_');
+}
+
+/**
+ * Posibles URLs del GIF animado de un emoji, en orden de preferencia:
+ * primero la copia local (`npm run offline`), luego el CDN de Google.
+ */
+export function urlsGif(emoji: string) {
+  const codigo = codigoEmoji(emoji);
+  return [`gif/${codigo}.gif`, `https://fonts.gstatic.com/s/e/notoemoji/latest/${codigo}/512.gif`];
 }
 
 export const ORDINALES = [

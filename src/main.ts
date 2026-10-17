@@ -2,13 +2,14 @@ import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 import './styles.css';
-import datos from './data/malla.json';
-import type { Malla } from './types';
+import { carreraActual } from './carreras';
 import { ajustarTextos, renderMalla } from './malla';
-import { abrirTarjeta, cerrarTarjeta, idAbierto } from './tarjeta3d';
+import { abrirTarjeta, cerrarTarjeta, idAbierto, precargarGif } from './tarjeta3d';
 import { iniciarRastreo } from './rastreoMano';
 
-const malla = datos as Malla;
+// Carrera según ?c=550 / ?c=590 (por defecto 550). En el stand se muestran solo los semestres, sin las electivas libres.
+const malla = carreraActual();
+document.title = `Malla Curricular · ${malla.carrera} · UPSA`;
 renderMalla(malla);
 ajustarTextos();
 // Recalcular cuando cargue la fuente Poppins y cuando cambie el tamaño de la pantalla
@@ -56,6 +57,7 @@ function elegir(celda: HTMLElement | null, ahora: number) {
   desdeCandidata = ahora;
   fueraCandidataDesde = 0;
   celda?.classList.add('cargando');
+  if (celda) precargarGif(celda, malla);
 }
 
 /** La mano y el mouse solo actualizan la posición; la decisión se toma en cada frame (bucle). */

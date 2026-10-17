@@ -5,8 +5,8 @@ const CDN_MODELO =
   'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task';
 
 // Si se ejecutó `npm run offline`, los archivos están en public/mediapipe (útil si el stand no tiene internet)
-const LOCAL_WASM = '/mediapipe/wasm';
-const LOCAL_MODELO = '/mediapipe/hand_landmarker.task';
+const LOCAL_WASM = 'mediapipe/wasm';
+const LOCAL_MODELO = 'mediapipe/hand_landmarker.task';
 
 // ---------- Ajustes ----------
 /** Punto de la mano que mueve el puntero: 8 = punta del dedo índice */

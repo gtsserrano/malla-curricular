@@ -1,7 +1,27 @@
-# Malla Curricular Interactiva
+# Malla Curricular Interactiva · UPSA
 
-Malla curricular a pantalla completa controlada con la mano a través de la cámara.
-Al mantener el puntero sobre una materia, su tarjeta se abre con un giro 3D y muestra información y una foto.
+Mallas curriculares de **Ingeniería de Sistemas e Inteligencia Artificial (550)** e
+**Ingeniería en Informática y Gestión Inteligente (590)**, en dos versiones:
+
+| Versión | Página | Para qué |
+| --- | --- | --- |
+| **Stand** | `index.html?c=550` / `?c=590` | Pantalla completa controlada con la mano por la cámara |
+| **Celular** | `movil.html?c=550` / `?c=590` | La que abren los códigos QR; se toca una materia para ver su tarjeta |
+
+En ambas, cada materia abre una tarjeta 3D con su GIF animado, ficha oficial (sigla, créditos, horas, requisitos) e información.
+
+## Códigos QR dinámicos
+
+| Carrera | Dirección del QR |
+| --- | --- |
+| Sistemas e IA (550) | https://gtsserrano.github.io/malla-curricular/q/550/ |
+| Informática y Gestión Inteligente (590) | https://gtsserrano.github.io/malla-curricular/q/590/ |
+
+- Los archivos para imprimir están en [qr/](qr/): `imprimir.html` (las dos tarjetas en una hoja A4), `qr-XXX-tarjeta.svg` y `qr-XXX.png`.
+- **Son dinámicos**: el QR apunta a `/q/<código>/`, que redirige a la malla. Para cambiar a dónde lleva,
+  edita el destino en [public/q/550/index.html](public/q/550/index.html) o [public/q/590/index.html](public/q/590/index.html) y sube los cambios; el QR impreso sigue sirviendo.
+- Para actualizar lo publicado: `npm run publicar`.
+- Para regenerar las imágenes de los QR: `npm run qr`.
 
 ## Tecnologías
 
@@ -49,7 +69,8 @@ El mouse también funciona como puntero, así puedes desarrollar sin cámara.
 
 ## Editar el contenido
 
-- **Materias y descripciones**: [src/data/malla.json](src/data/malla.json). Cada semestre es una fila y las materias aparecen en el orden del archivo.
+- **Materias y descripciones**: [src/data/malla-550.json](src/data/malla-550.json) y [src/data/malla-590.json](src/data/malla-590.json). Cada semestre es una fila y las materias aparecen en el orden del archivo; `"semestre": 0` = electiva (solo se muestra en la versión del celular).
+- **Agregar otra carrera**: crea su JSON y regístralo en [src/carreras.ts](src/carreras.ts).
 - **Fotos**: [public/img/](public/img/). La lista de nombres que debe tener cada foto está en [public/img/LEEME.txt](public/img/LEEME.txt).
 - **Colores y estilos**: [src/styles.css](src/styles.css)
 - **Tiempos de apertura y cierre**: constantes al inicio de [src/main.ts](src/main.ts)

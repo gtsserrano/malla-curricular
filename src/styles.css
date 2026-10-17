@@ -1,12 +1,5 @@
-:root {
-  --verde-oscuro: #2f8a3c;
-  --verde-claro: #8dbf1f;
-  --vacia-impar: #b9d1aa;
-  --vacia-par: #dde9c6;
-  --fondo: #ffffff;
-  --gris: #8a8f98;
-  --texto: #1f2a1f;
-}
+/* Versión del stand: malla a pantalla completa controlada con la mano */
+@import './tarjeta.css';
 
 * {
   box-sizing: border-box;
@@ -39,13 +32,20 @@ body {
   padding-left: 9vw;
 }
 #encabezado h1 {
-  font-size: clamp(1.1rem, 2.2vw, 2.2rem);
+  flex-shrink: 0;
+  white-space: nowrap; /* el nombre de la carrera siempre en una sola línea */
+  font-size: clamp(1rem, 2vw, 2.2rem);
   font-weight: 700;
   color: var(--verde-oscuro);
 }
 #encabezado span {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: var(--gris);
   font-weight: 500;
+  font-size: clamp(0.7rem, 1vw, 1.1rem);
 }
 
 /* ---------- Malla ---------- */
@@ -145,195 +145,6 @@ body {
 }
 .materia.cargando::after {
   transform: scaleX(var(--progreso, 0));
-}
-
-/* ---------- Tarjeta 3D ---------- */
-#capa-tarjeta {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  perspective: 1800px;
-  background: rgb(20 50 25 / 0.55);
-  backdrop-filter: blur(5px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
-}
-#capa-tarjeta.visible {
-  opacity: 1;
-}
-
-#tarjeta {
-  position: relative;
-  width: min(86vw, 1400px);
-  height: min(84vh, 820px);
-  transform-style: preserve-3d;
-  transform: scale(0.6);
-  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.cara {
-  position: absolute;
-  inset: 0;
-  border-radius: 24px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  box-shadow: 0 40px 90px -20px rgb(0 0 0 / 0.55);
-}
-
-/* El frente se ve igual que el cuadro de la malla, así la transición parece continua */
-.frente {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  background: var(--color);
-  color: #fff;
-  font-weight: 600;
-  font-size: 3vw;
-}
-
-/* Reverso: título arriba a la izquierda, foto grande a la izquierda e información a la derecha */
-.reverso {
-  transform: rotateY(180deg);
-  display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    'titulo titulo'
-    'foto   info';
-  gap: 1.6vw 2.4vw;
-  padding: 2.2vw 2.6vw 2.6vw;
-  background: #fff;
-  border-top: 12px solid var(--color);
-}
-
-.reverso header {
-  grid-area: titulo;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.6vh;
-}
-.reverso .semestre {
-  padding: 0.3em 1em;
-  border-radius: 999px;
-  background: var(--color);
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: clamp(0.7rem, 0.85vw, 0.95rem);
-}
-.reverso h3 {
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--verde-oscuro);
-  font-size: clamp(1.5rem, 2.6vw, 3rem);
-}
-
-.reverso .foto {
-  grid-area: foto;
-  position: relative;
-  margin: 0;
-  min-height: 0;
-  border-radius: 18px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #43a04c, #1f6b2d);
-}
-.reverso .foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.reverso .foto .reserva {
-  display: none;
-  position: absolute;
-  inset: 0;
-  place-items: center;
-  font-size: clamp(5rem, 11vw, 12rem);
-  /* Círculos decorativos detrás del ícono */
-  background:
-    radial-gradient(circle at 85% 15%, rgb(255 255 255 / 0.1) 0 22%, transparent 22.2%),
-    radial-gradient(circle at 10% 95%, rgb(255 255 255 / 0.08) 0 30%, transparent 30.2%);
-  color: #fff;
-}
-.reverso .foto.sin-foto img {
-  display: none;
-}
-.reverso .foto.sin-foto .reserva {
-  display: grid;
-}
-
-.reverso .info {
-  grid-area: info;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.6vh;
-  min-height: 0;
-  color: #3d473d;
-  font-size: clamp(0.85rem, min(1.35vw, 2.3vh), 1.6rem);
-  line-height: 1.45;
-}
-.reverso .descripcion {
-  font-size: 1.08em;
-}
-.reverso h4 {
-  margin-bottom: 0.3em;
-  color: var(--verde-oscuro);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.82em;
-}
-.reverso ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.25em 1.2em;
-  padding: 0;
-  list-style: none;
-}
-.reverso li {
-  position: relative;
-  padding-left: 1.1em;
-}
-.reverso li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.45em;
-  height: 0.45em;
-  border-radius: 50%;
-  background: var(--color);
-}
-.reverso .chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
-}
-.reverso .pista {
-  position: absolute;
-  top: 2.2vw;
-  right: 2.6vw;
-  padding: 0.4em 1em;
-  border-radius: 999px;
-  background: #f1f5ec;
-  color: var(--verde-oscuro);
-  font-weight: 600;
-  font-size: clamp(0.75rem, 1vw, 1.1rem);
-}
-.reverso .chips span {
-  padding: 0.2em 0.8em;
-  border-radius: 999px;
-  border: 2px solid var(--color);
-  color: var(--verde-oscuro);
-  font-weight: 600;
-  font-size: 0.85em;
 }
 
 /* ---------- Puntero ---------- */

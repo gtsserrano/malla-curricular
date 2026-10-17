@@ -35,7 +35,7 @@ export function ajustarTextos() {
 /** Dibuja la malla: una fila por semestre, cada materia en un cuadro independiente. */
 export function renderMalla(malla: Malla) {
   document.getElementById('encabezado')!.innerHTML =
-    `<h1>${malla.carrera}</h1><span>${malla.universidad}</span>`;
+    `<h1>${malla.carrera}</h1><span>${[malla.universidad, malla.plan].filter(Boolean).join(' · ')}</span>`;
 
   const semestres = Math.max(...malla.materias.map((m) => m.semestre));
   const columnas = Math.max(

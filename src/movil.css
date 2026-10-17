@@ -1,0 +1,209 @@
+/* Versión para celular (movil.html): la que abre el código QR */
+@import './tarjeta.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body.movil {
+  min-height: 100dvh;
+  background: #f4f7f0;
+  color: var(--texto);
+  font-family: 'Poppins', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Con la tarjeta abierta no se desplaza la lista de fondo */
+body.con-tarjeta {
+  overflow: hidden;
+}
+
+/* ---------- Cabecera ---------- */
+#cabecera {
+  padding: calc(20px + env(safe-area-inset-top)) 16px 18px;
+  background: linear-gradient(135deg, #3f9a48, #1f6b2d);
+  color: #fff;
+}
+#cabecera .marca {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+#titulo {
+  margin-top: 6px;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+#subtitulo {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+#selector {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+#selector a {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 2px solid rgb(255 255 255 / 0.6);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#selector a.activa {
+  background: #fff;
+  border-color: #fff;
+  color: var(--verde-oscuro);
+}
+
+.ayuda {
+  padding: 14px 16px 0;
+  color: var(--gris);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ---------- Lista de semestres ---------- */
+#lista {
+  padding: 8px 16px 8px;
+}
+.semestre h2 {
+  margin: 18px 0 8px;
+  color: var(--verde-oscuro);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.cuadros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.materia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-height: 72px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--color);
+  color: #fff;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.materia:active {
+  transform: scale(0.97);
+}
+.materia small {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+#pie {
+  padding: 24px 16px calc(24px + env(safe-area-inset-bottom));
+  color: var(--gris);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* ---------- Tarjeta adaptada al celular ---------- */
+#capa-tarjeta.visible {
+  pointer-events: auto;
+}
+#tarjeta {
+  width: calc(100vw - 24px);
+  height: calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+}
+.frente {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+/* Todo en una columna y con desplazamiento dentro de la tarjeta */
+.reverso {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    'titulo'
+    'foto'
+    'info';
+  gap: 16px;
+  padding: 20px 18px 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.reverso h3 {
+  padding-right: 36px; /* espacio para el botón de cerrar */
+  font-size: 1.5rem;
+}
+/* Ficha técnica como etiquetas (en pantallas angostas los "·" quedaban sueltos al saltar de línea) */
+.reverso .ficha {
+  gap: 6px;
+  font-size: 0.75rem;
+}
+.reverso .ficha span {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #f1f5ec;
+}
+.reverso .ficha span + span::before {
+  content: none;
+}
+.reverso .foto {
+  height: 34vh;
+  min-height: 200px;
+}
+.reverso .foto .reserva .gif {
+  width: min(70%, 28vh);
+}
+.reverso .info {
+  justify-content: flex-start;
+  gap: 14px;
+  font-size: 0.95rem;
+}
+.reverso ul {
+  grid-template-columns: 1fr;
+}
+/* En el celular se cierra con el botón, no con el puño */
+.reverso .pista {
+  display: none;
+}
+
+#cerrar {
+  position: fixed;
+  top: calc(26px + env(safe-area-inset-top));
+  right: 24px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--verde-oscuro);
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s 0.4s;
+}
+#capa-tarjeta.visible #cerrar {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -7,13 +7,16 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "offline": "node scripts/descargar-modelos.mjs"
+    "offline": "node scripts/descargar-modelos.mjs",
+    "qr": "node scripts/generar-qr.mjs",
+    "publicar": "npm run build && node scripts/publicar.mjs"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.3.0",
     "@mediapipe/tasks-vision": "0.10.14"
   },
   "devDependencies": {
+    "qrcode": "^1.5.4",
     "typescript": "^5.5.4",
     "vite": "^5.4.8"
   }

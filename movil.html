@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#2f8a3c" />
+    <title>Malla Curricular · UPSA</title>
+  </head>
+  <body class="movil">
+    <header id="cabecera">
+      <p class="marca">UPSA · Facultad de Ingeniería</p>
+      <h1 id="titulo"></h1>
+      <p id="subtitulo"></p>
+      <nav id="selector" aria-label="Elegir carrera"></nav>
+    </header>
+
+    <p class="ayuda">👆 Toca una materia para ver de qué trata</p>
+    <main id="lista"></main>
+    <footer id="pie"></footer>
+
+    <!-- Tarjeta 3D (la misma de la versión del stand) -->
+    <div id="capa-tarjeta">
+      <div id="tarjeta">
+        <div class="cara frente"></div>
+        <div class="cara reverso"></div>
+      </div>
+      <button id="cerrar" type="button" aria-label="Cerrar">✕</button>
+    </div>
+
+    <script type="module" src="/src/movil.ts"></script>
+  </body>
+</html>
