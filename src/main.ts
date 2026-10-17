@@ -37,7 +37,10 @@ const celdas = [...document.querySelectorAll<HTMLElement>('.materia')];
 
 document.getElementById('tablero')!.addEventListener('click', (e) => {
   const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
-  if (celda && !idAbierto()) abrirTarjeta(celda, malla);
+  if (celda && !idAbierto()) {
+    elegir(null, performance.now());
+    abrirTarjeta(celda, malla);
+  }
 });
 
 document.getElementById('tablero')!.addEventListener('keydown', (e) => {
@@ -45,6 +48,7 @@ document.getElementById('tablero')!.addEventListener('keydown', (e) => {
   const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
   if (!celda || idAbierto()) return;
   e.preventDefault();
+  elegir(null, performance.now());
   abrirTarjeta(celda, malla);
 });
 
