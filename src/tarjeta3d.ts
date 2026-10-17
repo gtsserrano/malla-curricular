@@ -11,7 +11,10 @@ export function idAbierto() {
   return abierta;
 }
 
-const lista = (items: string[]) => items.map((t) => `<li>${t}</li>`).join('');
+const escapar = (texto: string) => texto.replace(/[&<>"']/g, (c) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+})[c]!);
+const lista = (items: string[]) => items.map((t) => `<li>${escapar(t)}</li>`).join('');
 
 /**
  * Abre la tarjeta partiendo de la posición del cuadro (técnica FLIP):
@@ -27,25 +30,21 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
   reverso.innerHTML = `
     <header>
       <span class="semestre">${ORDINALES[m.semestre - 1] ?? m.semestre + '°'} Semestre</span>
-      <h3>${m.nombre}</h3>
+      <h3>${escapar(m.nombre)}</h3>
     </header>
     <figure class="foto">
-      <img src="${imagenMateria(m)}" alt="${m.nombre}" />
+      <img src="${escapar(imagenMateria(m))}" alt="${escapar(m.nombre)}" />
       <div class="reserva">${m.icono ?? '📘'}</div>
     </figure>
     <div class="info">
-      <p class="descripcion">${m.descripcion}</p>
-      <section>
-        <h4>¿Qué aprenderás?</h4>
-        <ul>${lista(m.temas)}</ul>
-      </section>
-      <section>
-        <h4>¿Para qué te sirve?</h4>
-        <p>${m.utilidad}</p>
-      </section>
+      <p class="datos-plan">${m.sigla ? `${escapar(m.sigla)} · ` : ''}${m.creditos} créditos · ${m.horasTeoricas} h teóricas y ${m.horasPracticas} h prácticas por semana</p>
+      ${m.requisitos ? `<p class="requisitos"><strong>Requisitos:</strong> ${escapar(m.requisitos)}</p>` : ''}
+      ${m.descripcion ? `<p class="descripcion">${escapar(m.descripcion)}</p>` : '<p class="descripcion">El documento solo detalla esta asignatura en el plan de estudios.</p>'}
+      ${m.temas?.length ? `<section><h4>Contenidos mínimos</h4><ul>${lista(m.temas)}</ul></section>` : ''}
+      ${m.utilidad ? `<section><h4>Aporte al perfil profesional</h4><p>${escapar(m.utilidad)}</p></section>` : ''}
       ${
         m.herramientas?.length
-          ? `<section><h4>Herramientas</h4><div class="chips">${m.herramientas.map((h) => `<span>${h}</span>`).join('')}</div></section>`
+          ? `<section><h4>Herramientas</h4><div class="chips">${m.herramientas.map((h) => `<span>${escapar(h)}</span>`).join('')}</div></section>`
           : ''
       }
     </div>

@@ -3,6 +3,8 @@
 Malla curricular a pantalla completa controlada con la mano a través de la cámara.
 Al mantener el puntero sobre una materia, su tarjeta se abre con un giro 3D y muestra información y una foto.
 
+La malla corresponde a **Ingeniería de Sistemas e Inteligencia Artificial**, plan UPSA 550-4, según `550 SISTEMAS E INTELIGENCIA ARTIFICIAL.docx`. Incluye las 55 asignaturas, sus semestres, siglas, horas, créditos y requisitos tal como aparecen en la tabla del plan. El documento aporta contenidos mínimos de 45 materias; las 10 restantes se muestran con los datos disponibles en el plan.
+
 ## Tecnologías
 
 - **TypeScript + Vite**: la app corre en el navegador
@@ -49,7 +51,7 @@ El mouse también funciona como puntero, así puedes desarrollar sin cámara.
 
 ## Editar el contenido
 
-- **Materias y descripciones**: [src/data/malla.json](src/data/malla.json). Cada semestre es una fila y las materias aparecen en el orden del archivo.
+- **Materias y descripciones**: [src/data/malla.json](src/data/malla.json). Cada semestre es una fila y las materias aparecen en el orden del archivo. Los requisitos conservan las siglas impresas en el documento; el requisito `ID310` de Modalidad de Grado II no tiene una asignatura correspondiente en la tabla del plan.
 - **Fotos**: [public/img/](public/img/). La lista de nombres que debe tener cada foto está en [public/img/LEEME.txt](public/img/LEEME.txt).
 - **Colores y estilos**: [src/styles.css](src/styles.css)
 - **Tiempos de apertura y cierre**: constantes al inicio de [src/main.ts](src/main.ts)

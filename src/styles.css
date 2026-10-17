@@ -272,12 +272,18 @@ body {
   grid-area: info;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.6vh;
   min-height: 0;
+  overflow-y: auto;
   color: #3d473d;
   font-size: clamp(0.85rem, min(1.35vw, 2.3vh), 1.6rem);
   line-height: 1.45;
+}
+.reverso .datos-plan,
+.reverso .requisitos {
+  font-size: 0.85em;
+  font-weight: 600;
 }
 .reverso .descripcion {
   font-size: 1.08em;
