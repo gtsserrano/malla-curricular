@@ -35,6 +35,27 @@ const GRACIA_MS = 400;
 
 const celdas = [...document.querySelectorAll<HTMLElement>('.materia')];
 
+document.getElementById('tablero')!.addEventListener('click', (e) => {
+  const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
+  if (celda && !idAbierto()) abrirTarjeta(celda, malla);
+});
+
+document.getElementById('tablero')!.addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
+  if (!celda || idAbierto()) return;
+  e.preventDefault();
+  abrirTarjeta(celda, malla);
+});
+
+document.getElementById('capa-tarjeta')!.addEventListener('click', (e) => {
+  if ((e.target as HTMLElement).closest('#cerrar-tarjeta')) {
+    cerrarTarjeta();
+    elegir(null, performance.now());
+    manoPerdida();
+  }
+});
+
 let px = 0;
 let py = 0;
 let hayPuntero = false;
@@ -113,10 +134,11 @@ function bucle() {
 }
 setInterval(bucle, 30);
 
-// El mouse también funciona (útil para desarrollar sin cámara); mantener el botón presionado equivale al puño
-addEventListener('mousemove', (e) => moverPuntero(e.clientX, e.clientY, e.buttons > 0));
-addEventListener('mousedown', (e) => moverPuntero(e.clientX, e.clientY, true));
-addEventListener('mouseup', (e) => moverPuntero(e.clientX, e.clientY, false));
+// El mouse también puede apuntar; el clic abre y el botón × o Escape cierran.
+// El puño se reserva para la mano detectada por cámara, para evitar que un clic cierre la tarjeta antes de tiempo.
+addEventListener('mousemove', (e) => {
+  if (!idAbierto()) moverPuntero(e.clientX, e.clientY);
+});
 
 addEventListener('keydown', (e) => {
   if (e.key.toLowerCase() === 'f') {

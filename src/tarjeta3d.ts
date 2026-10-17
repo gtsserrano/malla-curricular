@@ -41,6 +41,7 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
       </div>
     </figure>
     <div class="detalle">
+      <button id="cerrar-tarjeta" type="button" aria-label="Cerrar tarjeta">×</button>
       <header>
         <span class="semestre">${ORDINALES[m.semestre - 1] ?? m.semestre + '°'} Semestre</span>
         <h3>${escapar(m.nombre)}</h3>
@@ -48,7 +49,7 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
       <div class="info">
         <p class="descripcion">${escapar(m.descripcion)}</p>
       </div>
-      <div class="pista">✊ Cierra el puño para volver</div>
+      <div class="pista">✊ Cierra el puño, pulsa Escape o usa × para volver</div>
     </div>`;
   // Si la foto aún no existe, se muestra el ícono de la materia sobre fondo verde
   const foto = reverso.querySelector<HTMLElement>('.foto')!;

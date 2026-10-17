@@ -20,7 +20,7 @@ docker compose up --build -V
 
 (`-V` reinstala `node_modules` dentro del contenedor; úsalo siempre que cambie `package.json`.)
 
-Abre **http://localhost:5173** en Chrome o Edge y permite el acceso a la cámara. Mantén la punta del dedo índice sobre una materia durante 2 segundos para abrirla; cierra el puño para volver a la malla. Si bloqueaste la cámara, permite el acceso para `localhost` y pulsa **Reintentar cámara**.
+Abre **http://localhost:5173** en Chrome o Edge y permite el acceso a la cámara. Mantén la punta del dedo índice sobre una materia durante 2 segundos para abrirla; cierra el puño para volver a la malla. También puedes abrir una materia con clic o con Enter y cerrarla con el botón × o Escape. Si bloqueaste la cámara, permite el acceso para `localhost` y pulsa **Reintentar cámara**.
 
 > La cámara la usa el **navegador de Windows**, no el contenedor. Por eso no hace falta pasar la webcam a Docker.
 
@@ -47,7 +47,7 @@ npm run offline    # descargar los modelos de MediaPipe para usar sin internet
 | `C` | Mostrar/ocultar la vista de la cámara (la detección funciona igual) |
 | `Esc` | Cerrar la tarjeta |
 
-El mouse también funciona como puntero, así puedes desarrollar sin cámara.
+El mouse también funciona como puntero; un clic abre la materia de inmediato.
 
 ## Editar el contenido
 
