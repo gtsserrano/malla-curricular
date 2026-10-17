@@ -19,6 +19,8 @@ body {
 body {
   display: grid;
   grid-template-rows: auto 1fr;
+  /* minmax(0, 1fr): nada puede ensanchar la página más allá de la pantalla (antes se cortaban las columnas de la derecha) */
+  grid-template-columns: minmax(0, 1fr);
   height: 100vh;
   padding: 2vh 2vw 3.5vh;
   gap: 1.5vh;
@@ -29,12 +31,16 @@ body {
   display: flex;
   align-items: baseline;
   gap: 1rem;
+  min-width: 0;
   padding-left: 9vw;
 }
 #encabezado h1 {
-  flex-shrink: 0;
+  min-width: 0;
+  flex-shrink: 0; /* el título no se achica: el que se recorta es el subtítulo */
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap; /* el nombre de la carrera siempre en una sola línea */
-  font-size: clamp(1rem, 2vw, 2.2rem);
+  font-size: clamp(1rem, 1.8vw, 2.1rem);
   font-weight: 700;
   color: var(--verde-oscuro);
 }
@@ -103,7 +109,7 @@ body {
 /* ---------- Malla ---------- */
 #malla {
   display: grid;
-  grid-template-columns: 8vw 1fr;
+  grid-template-columns: 8vw minmax(0, 1fr);
   gap: 1vw;
   min-height: 0;
 }
