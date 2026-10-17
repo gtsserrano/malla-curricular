@@ -6,7 +6,7 @@ export interface Materia {
   horasPracticas: number;
   creditos: number;
   requisitos?: string | null;
-  descripcion?: string;
+  descripcion: string;
   /** "¿Qué aprenderás?" */
   temas?: string[];
   /** "¿Para qué te sirve?" */

@@ -51,7 +51,7 @@ El mouse también funciona como puntero, así puedes desarrollar sin cámara.
 
 ## Editar el contenido
 
-- **Materias y descripciones**: [src/data/malla.json](src/data/malla.json). Cada semestre es una fila y las materias aparecen en el orden del archivo. Las descripciones son resúmenes explicativos; los contenidos mínimos provienen del documento. Los requisitos se conservan en los datos, aunque no se muestran en las tarjetas. El requisito `ID310` de Modalidad de Grado II no tiene una asignatura correspondiente en la tabla del plan.
+- **Materias y descripciones**: [src/data/malla.json](src/data/malla.json). Cada semestre es una fila y las materias aparecen en el orden del archivo. Las tarjetas muestran solo la descripción explicativa de cada materia. El resto de los datos del plan se conserva en el JSON como referencia; el requisito `ID310` de Modalidad de Grado II no tiene una asignatura correspondiente en la tabla del plan.
 - **Fotos**: [public/img/](public/img/). La lista de nombres que debe tener cada foto está en [public/img/LEEME.txt](public/img/LEEME.txt).
 - **Colores y estilos**: [src/styles.css](src/styles.css)
 - **Tiempos de apertura y cierre**: constantes al inicio de [src/main.ts](src/main.ts)

@@ -14,7 +14,6 @@ export function idAbierto() {
 const escapar = (texto: string) => texto.replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 })[c]!);
-const lista = (items: string[]) => items.map((t) => `<li>${escapar(t)}</li>`).join('');
 
 /**
  * Abre la tarjeta partiendo de la posición del cuadro (técnica FLIP):
@@ -37,14 +36,7 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
       <div class="reserva">${m.icono ?? '📘'}</div>
     </figure>
     <div class="info">
-      <p class="datos-plan">${m.sigla ? `${escapar(m.sigla)} · ` : ''}${m.creditos} créditos · ${m.horasTeoricas} h teóricas y ${m.horasPracticas} h prácticas por semana</p>
-      <section><h4>De qué trata</h4><p class="descripcion">${escapar(m.descripcion ?? '')}</p></section>
-      ${m.temas?.length ? `<section><h4>Contenidos mínimos</h4><ul>${lista(m.temas)}</ul></section>` : ''}
-      ${
-        m.herramientas?.length
-          ? `<section><h4>Herramientas</h4><div class="chips">${m.herramientas.map((h) => `<span>${escapar(h)}</span>`).join('')}</div></section>`
-          : ''
-      }
+      <p class="descripcion">${escapar(m.descripcion)}</p>
     </div>
     <div class="pista">✊ Cierra el puño para cerrar</div>`;
   // Si la foto aún no existe, se muestra el ícono de la materia sobre fondo verde

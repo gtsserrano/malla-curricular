@@ -272,54 +272,14 @@ body {
   grid-area: info;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 1.6vh;
+  justify-content: center;
   min-height: 0;
-  overflow-y: auto;
   color: #3d473d;
-  font-size: clamp(0.85rem, min(1.35vw, 2.3vh), 1.6rem);
-  line-height: 1.45;
-}
-.reverso .datos-plan {
-  font-size: 0.85em;
-  font-weight: 600;
+  font-size: clamp(1.1rem, 1.7vw, 1.75rem);
+  line-height: 1.55;
 }
 .reverso .descripcion {
-  font-size: 1.08em;
-}
-.reverso h4 {
-  margin-bottom: 0.3em;
-  color: var(--verde-oscuro);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.82em;
-}
-.reverso ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.25em 1.2em;
-  padding: 0;
-  list-style: none;
-}
-.reverso li {
-  position: relative;
-  padding-left: 1.1em;
-}
-.reverso li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.45em;
-  height: 0.45em;
-  border-radius: 50%;
-  background: var(--color);
-}
-.reverso .chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
+  max-width: 38ch;
 }
 .reverso .pista {
   position: absolute;
@@ -332,15 +292,6 @@ body {
   font-weight: 600;
   font-size: clamp(0.75rem, 1vw, 1.1rem);
 }
-.reverso .chips span {
-  padding: 0.2em 0.8em;
-  border-radius: 999px;
-  border: 2px solid var(--color);
-  color: var(--verde-oscuro);
-  font-weight: 600;
-  font-size: 0.85em;
-}
-
 /* ---------- Puntero ---------- */
 #puntero {
   position: fixed;
