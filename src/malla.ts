@@ -35,11 +35,7 @@ export function ajustarTextos() {
 /** Dibuja la malla: una fila por semestre, cada materia en un cuadro independiente. */
 export function renderMalla(malla: Malla) {
   document.getElementById('encabezado')!.innerHTML =
-    `<div class="titulo-malla"><h1>${malla.carrera}</h1><span>${malla.universidad}</span></div>
-     <div class="guia-gestos" aria-label="Cómo explorar la malla">
-       <span>👋 Apunta a una materia</span><span>⏳ Espera 2 segundos</span><span>✊ Cierra el puño para volver</span>
-       <span class="guia-alternativa">También puedes hacer clic</span>
-     </div>`;
+    `<h1>${malla.carrera}</h1><span>${malla.universidad}</span>`;
 
   const semestres = Math.max(...malla.materias.map((m) => m.semestre));
   const columnas = Math.max(
