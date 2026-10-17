@@ -1,0 +1,78 @@
+Opcional: coloca aqui una FOTO de cada materia con EXACTAMENTE estos nombres (formato .jpg).
+Si una materia no tiene foto, la tarjeta muestra su GIF animado.
+Para usar otro nombre o formato, agrega "imagen": "img/mi-foto.png" a esa materia en src/data/malla.json
+
+--- Semestre 1 ---
+fundamentos-de-matematica.jpg
+algebra-i.jpg
+teoria-general-de-sistema.jpg
+fundamentos-de-ti.jpg
+pensamiento-critico.jpg
+fundamentos-de-administracion-de-empresas.jpg
+
+--- Semestre 2 ---
+calculo-i.jpg
+algebra-ii.jpg
+fundamentos-de-programacion-e-ia.jpg
+redes-i.jpg
+electronica-digital.jpg
+ciudadania-y-derechos-humanos.jpg
+
+--- Semestre 3 ---
+calculo-ii.jpg
+estadistica-i.jpg
+programacion-avanzada-y-analisis-de-datos.jpg
+redes-ii.jpg
+sistemas-digitales.jpg
+electiva-i.jpg
+
+--- Semestre 4 ---
+calculo-iii.jpg
+estadistica-ii.jpg
+programacion-orientada-a-objetos.jpg
+sistemas-operativos-i.jpg
+gestion-del-talento-humano.jpg
+ingles-certificacion.jpg
+electiva-ii.jpg
+
+--- Semestre 5 ---
+investigacion-de-operaciones-e-ia.jpg
+bases-de-datos-relacionales-y-no-relacionales.jpg
+estructuras-de-datos-avanzadas-e-ia.jpg
+sistemas-operativos-ii.jpg
+robotica.jpg
+electiva-iii.jpg
+
+--- Semestre 6 ---
+logica-matematica-para-ia.jpg
+gestion-de-sistemas-de-base-de-datos.jpg
+computacion-movil-y-ubicua.jpg
+ingenieria-de-software-i.jpg
+proyectos-i.jpg
+programacion-paralela-y-distribuida.jpg
+
+--- Semestre 7 ---
+modelacion-y-simulacion-con-ia.jpg
+desarrollo-de-aplicaciones-web.jpg
+analisis-y-diseno-de-sistemas.jpg
+virtualizacion-y-computacion-en-la-nube.jpg
+ingenieria-de-software-ii.jpg
+electiva-iv.jpg
+
+--- Semestre 8 ---
+proyectos-ii.jpg
+inteligencia-artificial-i.jpg
+ciencia-de-datos-y-big-data-analitics.jpg
+ciberseguridad-para-sistemas-inteligentes.jpg
+pasantia-profesional-300-horas.jpg
+innovacion-y-emprendimiento.jpg
+
+--- Semestre 9 ---
+inteligencia-artificial-ii.jpg
+modalidad-de-grado-i.jpg
+gestion-de-sistemas.jpg
+proyectos-globales-de-nuevas-tecnologias.jpg
+etica-y-valores.jpg
+
+--- Semestre 10 ---
+modalidad-de-grado-ii.jpg

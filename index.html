@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malla Curricular · Ingeniería de Sistemas e Inteligencia Artificial · UPSA</title>
+    <script type="module" crossorigin src="./assets/stand-DXF0kcqF.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/tarjeta3d-BwnjoyLc.js">
+    <link rel="stylesheet" crossorigin href="./assets/tarjeta3d-BLLr4yTu.css">
+    <link rel="stylesheet" crossorigin href="./assets/stand-SwWX30eY.css">
+  </head>
+  <body>
+    <header id="encabezado"></header>
+
+    <main id="malla">
+      <div id="etiquetas"></div>
+      <div id="tablero"></div>
+    </main>
+
+    <!-- Capa de la tarjeta 3D -->
+    <div id="capa-tarjeta">
+      <div id="tarjeta">
+        <div class="cara frente"></div>
+        <div class="cara reverso"></div>
+      </div>
+    </div>
+
+    <!-- Puntero controlado por la mano -->
+    <div id="puntero"><div class="anillo"></div></div>
+
+    <!-- Vista previa de la cámara con el esqueleto de la mano detectada (oculta por defecto; la detección sigue activa) -->
+    <div id="vista-camara" class="oculto">
+      <video id="camara" autoplay playsinline muted></video>
+      <canvas id="esqueleto"></canvas>
+    </div>
+    <div id="estado">Presiona <b>F</b> para pantalla completa · <b>C</b> para mostrar/ocultar cámara</div>
+
+  </body>
+</html>
