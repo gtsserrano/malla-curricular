@@ -1,368 +1,923 @@
 {
-  "carrera": "Ingeniería Informática Administrativa",
+  "carrera": "Ingeniería de Sistemas e Inteligencia Artificial",
   "universidad": "UPSA · Universidad Privada de Santa Cruz de la Sierra",
   "materias": [
     {
-      "semestre": 1, "nombre": "Fundamentos de Matemática", "icono": "➗",
-      "descripcion": "Refuerza las bases de aritmética, álgebra y funciones necesarias para el resto de la carrera. Nivela a todos los estudiantes para enfrentar con seguridad las materias de cálculo y estadística.",
-      "temas": ["Números reales y operaciones", "Expresiones algebraicas", "Ecuaciones e inecuaciones", "Funciones y sus gráficas", "Trigonometría básica"],
-      "utilidad": "Es la base del razonamiento cuantitativo que usarás en programación, finanzas y análisis de datos."
+      "semestre": 1,
+      "nombre": "Fundamentos de Matemática",
+      "sigla": "MC110",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": null,
+      "icono": "🔢",
+      "descripcion": "Aquí empiezas a convertir números, ecuaciones y patrones en herramientas para resolver problemas reales. Es la base matemática que acompaña toda la carrera.",
+      "temas": [
+        "Conjuntos numéricos",
+        "Regla de tres simple y compuesta.",
+        "Fracciones algebraicas",
+        "Álgebra: Polinomios: operaciones y propiedades."
+      ],
+      "utilidad": "Capacidad de utilizar el razonamiento inductivo para reconocer patrones y formular conjeturas; utilizar el razonamiento proporcional y espacial, utilizar el razonamiento deductivo para analizar situaciones profesionales."
     },
     {
-      "semestre": 1, "nombre": "Álgebra I", "icono": "🔣",
-      "descripcion": "Introduce el lenguaje formal de la matemática: lógica, conjuntos y estructuras algebraicas. Desarrolla la capacidad de razonar con precisión y demostrar ideas.",
-      "temas": ["Lógica proposicional", "Teoría de conjuntos", "Relaciones y funciones", "Números complejos", "Polinomios"],
-      "utilidad": "La lógica que aprendes aquí es la misma que usan los programas: condiciones, decisiones y reglas."
+      "semestre": 1,
+      "nombre": "Álgebra I",
+      "sigla": "MC115",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": null,
+      "icono": "🔣",
+      "descripcion": "La lógica, los conjuntos y las funciones te enseñan a pensar con precisión. Esta materia transforma ideas abstractas en razonamientos que puedes demostrar y aplicar.",
+      "temas": [
+        "Lógica proposicional y métodos de demostración",
+        "Conjuntos y relaciones",
+        "Funciones y representación gráfica",
+        "Geometría analítica y figuras cónicas"
+      ],
+      "utilidad": "Conocimiento, habilidades y actitudes que posibilitan la comprensión de nuevas teorías, interpretaciones, métodos y técnicas dentro de los diferentes campos disciplinares, conducentes a satisfacer de manera óptima las…"
     },
     {
-      "semestre": 1, "nombre": "Fundamentos de Administración de Empresas", "icono": "🏢",
-      "descripcion": "Presenta cómo funciona una empresa por dentro y el rol del administrador. Es el primer paso del perfil administrativo que distingue a esta carrera.",
-      "temas": ["Proceso administrativo", "Planificación y organización", "Dirección y liderazgo", "Control de gestión", "Áreas funcionales de la empresa"],
-      "utilidad": "Te permite entender las necesidades del negocio para diseñar soluciones tecnológicas que realmente aporten valor."
+      "semestre": 1,
+      "nombre": "Teoría General de Sistema",
+      "sigla": "SC110",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🔄",
+      "descripcion": "Mira más allá de las piezas sueltas: aprende a reconocer cómo interactúan las partes de un sistema y cómo un cambio puede transformar el conjunto.",
+      "temas": [
+        "Principios de la Teoría General de Sistemas",
+        "Dinámica y retroalimentación de sistemas",
+        "Metodologías sistémicas duras y blandas",
+        "Metodología de Sistemas Blandos (SSM)"
+      ],
+      "utilidad": "La asignatura fortalece una visión holística e interdisciplinaria para comprender sistemas complejos como totalidades dinámicas e interconectadas."
     },
     {
-      "semestre": 1, "nombre": "Pensamiento Crítico", "icono": "🧠",
-      "descripcion": "Desarrolla habilidades para analizar argumentos, evaluar fuentes de información y construir opiniones fundamentadas.",
-      "temas": ["Argumentación y falacias", "Análisis de fuentes", "Resolución de problemas", "Comunicación de ideas", "Toma de postura"],
-      "utilidad": "Te ayuda a cuestionar, investigar y decidir con criterio en un mundo lleno de información."
+      "semestre": 1,
+      "nombre": "Fundamentos de TI",
+      "sigla": "TR110",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": null,
+      "icono": "💻",
+      "descripcion": "Descubre qué hay detrás de la tecnología cotidiana: computadoras, datos, software y redes. Aquí construyes el mapa general del mundo digital.",
+      "temas": [
+        "Introducción a las tecnologías de información y comunicación.",
+        "Arquitectura de una computadora.",
+        "Transferencia y almacenamiento de los datos y la información.",
+        "Sistemas de numeración y codificación."
+      ],
+      "utilidad": "Utiliza los conceptos fundamentales de las tecnologías de información y arquitectura de la computadora."
     },
     {
-      "semestre": 1, "nombre": "Fundamentos de TI", "icono": "💻",
-      "descripcion": "Primer contacto con el mundo de las tecnologías de la información: cómo funciona una computadora, el software y los servicios digitales que usan las empresas.",
-      "temas": ["Hardware y componentes", "Sistemas de numeración", "Software y sistemas operativos", "Internet y servicios digitales", "Tendencias tecnológicas"],
-      "utilidad": "Te da el panorama completo de la tecnología sobre la que construirás toda tu carrera.",
-      "herramientas": ["Windows", "Linux", "Office"]
+      "semestre": 1,
+      "nombre": "Pensamiento Crítico",
+      "sigla": "HH110",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🧠",
+      "descripcion": "Aprende a cuestionar ideas, evaluar evidencias y defender tus conclusiones. El pensamiento crítico te ayuda a tomar mejores decisiones dentro y fuera de la tecnología."
     },
     {
-      "semestre": 1, "nombre": "Contabilidad General I", "icono": "📒",
-      "descripcion": "Enseña los principios contables y cómo se registran las operaciones de una empresa hasta llegar a sus estados financieros.",
-      "temas": ["Principios contables", "Partida doble", "Libro diario y mayor", "Balance de comprobación", "Estados financieros básicos"],
-      "utilidad": "Clave para desarrollar sistemas contables y ERP, uno de los campos más demandados para el ingeniero informático administrativo.",
-      "herramientas": ["Excel"]
-    },
-
-    {
-      "semestre": 2, "nombre": "Cálculo I", "icono": "📈",
-      "descripcion": "Estudia el cambio a través de límites y derivadas, herramientas fundamentales para modelar fenómenos y optimizar resultados.",
-      "temas": ["Límites y continuidad", "Derivadas y sus reglas", "Razón de cambio", "Máximos y mínimos", "Aplicaciones a la economía"],
-      "utilidad": "Permite optimizar costos, ganancias y recursos, y es la base matemática de la inteligencia artificial."
+      "semestre": 1,
+      "nombre": "Fundamentos de Administración de Empresas",
+      "sigla": "BA110",
+      "horasTeoricas": 4,
+      "horasPracticas": 2,
+      "creditos": 10,
+      "requisitos": null,
+      "icono": "🏢",
+      "descripcion": "Conoce cómo se organiza y dirige una empresa. Entender sus objetivos y procesos te permitirá crear soluciones tecnológicas que respondan a necesidades reales."
     },
     {
-      "semestre": 2, "nombre": "Álgebra II", "icono": "🧮",
-      "descripcion": "Trabaja con matrices, vectores y sistemas de ecuaciones lineales, el lenguaje matemático de la computación moderna.",
-      "temas": ["Matrices y operaciones", "Determinantes", "Sistemas de ecuaciones lineales", "Espacios vectoriales", "Transformaciones lineales"],
-      "utilidad": "Las matrices están detrás de los gráficos por computadora, el machine learning y la investigación operativa."
+      "semestre": 2,
+      "nombre": "Cálculo I",
+      "sigla": "MC120",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MC110",
+      "icono": "📈",
+      "descripcion": "Explora el cambio con límites y derivadas. El cálculo te permite modelar fenómenos, entender tendencias y encontrar mejores soluciones.",
+      "temas": [
+        "Aspectos básicos del cálculo",
+        "Funciones compuestas",
+        "Sucesiones.",
+        "En esta unidad se introducen las nociones fundamentales de función y comportamiento límite, desarrollando la capacidad de formular y…"
+      ],
+      "utilidad": "Capacidad de utilizar el razonamiento inductivo para reconocer patrones y formular conjeturas; utilizar el razonamiento proporcional y espacial, utilizar el razonamiento deductivo para analizar situaciones profesionales."
     },
     {
-      "semestre": 2, "nombre": "Teoría de la Organización", "icono": "🏛️",
-      "descripcion": "Analiza cómo se estructuran las organizaciones, su cultura y el comportamiento de las personas que las forman.",
-      "temas": ["Escuelas de la administración", "Estructuras organizacionales", "Cultura organizacional", "Comportamiento humano", "Cambio organizacional"],
-      "utilidad": "Te prepara para implantar sistemas en empresas reales, donde el factor humano es tan importante como el técnico."
+      "semestre": 2,
+      "nombre": "Álgebra II",
+      "sigla": "MC125",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC115",
+      "icono": "🧮",
+      "descripcion": "Matrices, vectores y sistemas de ecuaciones forman un lenguaje esencial para la computación y la inteligencia artificial. Aquí aprendes a usarlo para modelar problemas.",
+      "temas": [
+        "Matrices y determinantes",
+        "Sistemas de ecuaciones lineales",
+        "Espacios vectoriales",
+        "Bases, dimensión y transformaciones lineales"
+      ],
+      "utilidad": "Capacidad de análisis y síntesis."
     },
     {
-      "semestre": 2, "nombre": "Fundamentos de Programación", "icono": "⌨️",
-      "descripcion": "Tu primer paso como desarrollador: aprendes a pensar en algoritmos y a escribir programas que resuelven problemas.",
-      "temas": ["Algoritmos y diagramas de flujo", "Variables y tipos de datos", "Condicionales y bucles", "Funciones", "Arreglos"],
-      "utilidad": "Programar es la habilidad central de la carrera: a partir de aquí construirás aplicaciones, sistemas y automatizaciones.",
-      "herramientas": ["Python", "C++", "VS Code"]
+      "semestre": 2,
+      "nombre": "Fundamentos de Programación e IA",
+      "sigla": "SC120",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": null,
+      "icono": "⌨️",
+      "descripcion": "Da tus primeros pasos creando algoritmos y programas, mientras descubres cómo los datos y las ideas de IA pueden ayudar a resolver problemas concretos.",
+      "temas": [
+        "Fundamentos de programación y estructuras de datos",
+        "tipos de datos, operadores, estructuras de control, funciones y modularidad.",
+        "Diseño de algoritmos y resolución de problemas",
+        "Computación científica y análisis de datos"
+      ],
+      "utilidad": "La asignatura contribuye al perfil del graduado como profesional capaz de diseñar soluciones computacionales eficientes, éticas y contextualizadas, integrando conocimientos de programación, análisis de datos y…"
     },
     {
-      "semestre": 2, "nombre": "Redes I", "icono": "🌐",
-      "descripcion": "Explica cómo se comunican las computadoras, desde el cable hasta internet, y cómo se arma una red local.",
-      "temas": ["Modelo OSI y TCP/IP", "Direccionamiento IP", "Medios y cableado estructurado", "Switches y routers", "Redes LAN"],
-      "utilidad": "Toda empresa necesita una red confiable: diseñarla y mantenerla es parte de tu perfil profesional.",
-      "herramientas": ["Cisco Packet Tracer"]
+      "semestre": 2,
+      "nombre": "Redes I",
+      "sigla": "TR120",
+      "horasTeoricas": 4,
+      "horasPracticas": 2,
+      "creditos": 10,
+      "requisitos": "TR110",
+      "icono": "🌐",
+      "descripcion": "Sigue el viaje de los datos desde una computadora hasta otra. Aprenderás cómo funcionan las redes y qué hace posible la comunicación digital.",
+      "temas": [
+        "Redes de computadoras e Internet.",
+        "Fundamentos y la transmisión de datos (medios y topologías), clases de redes y los protocolos que las rigen.",
+        "Capas del modelo de Internet (TCP/IP) y el modelo OSI, incluyendo",
+        "Capa de Aplicación"
+      ],
+      "utilidad": "Esta materia contribuye al desarrollo profesional al permitir a los estudiantes utilizar los conceptos fundamentales de Redes de Computadoras, resolver problemas aplicando conocimientos de ciencias e ingeniería, y saber…"
     },
     {
-      "semestre": 2, "nombre": "Contabilidad General II", "icono": "📊",
-      "descripcion": "Profundiza en el ciclo contable completo: ajustes, cierres y análisis de los estados financieros.",
-      "temas": ["Asientos de ajuste", "Depreciaciones", "Cierre del ejercicio", "Análisis de estados financieros", "Impuestos básicos"],
-      "utilidad": "Te permite entender y automatizar procesos contables dentro de los sistemas de información de una empresa.",
-      "herramientas": ["Excel"]
-    },
-
-    {
-      "semestre": 3, "nombre": "Cálculo II", "icono": "∫",
-      "descripcion": "Completa la formación en cálculo con integrales y series, herramientas para medir acumulaciones y aproximar funciones.",
-      "temas": ["Integral indefinida", "Integral definida", "Técnicas de integración", "Áreas y volúmenes", "Series y sucesiones"],
-      "utilidad": "Se aplica en probabilidad, análisis financiero y modelos de simulación."
-    },
-    {
-      "semestre": 3, "nombre": "Estadística I", "icono": "📉",
-      "descripcion": "Introduce la estadística descriptiva y la probabilidad para resumir, entender y comunicar datos.",
-      "temas": ["Recolección de datos", "Medidas de tendencia central", "Medidas de dispersión", "Probabilidad", "Distribuciones"],
-      "utilidad": "Es el primer paso hacia el análisis de datos y la inteligencia de negocios.",
-      "herramientas": ["Excel", "SPSS"]
+      "semestre": 2,
+      "nombre": "Electrónica Digital",
+      "sigla": "MR120",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "TR110",
+      "icono": "⚡",
+      "descripcion": "Desde el sistema binario hasta los circuitos lógicos, descubre cómo las señales eléctricas se convierten en decisiones dentro de un dispositivo digital.",
+      "temas": [
+        "Sistemas de numeración.",
+        "Álgebra de Boole.",
+        "Sistemas Digitales.",
+        "Combinacionales."
+      ],
+      "utilidad": "Capacidad de abstracción Capacidad de análisis Capacidad de manipular circuitos integrados Capacidad de analizar Sistemas Electrónicos Digitales"
     },
     {
-      "semestre": 3, "nombre": "Interculturalidad, Ciudadanía y Género", "icono": "🤝",
-      "descripcion": "Reflexiona sobre la diversidad cultural, los derechos ciudadanos y la equidad de género en la sociedad boliviana.",
-      "temas": ["Diversidad cultural", "Derechos y deberes ciudadanos", "Equidad de género", "Inclusión", "Convivencia democrática"],
-      "utilidad": "Forma profesionales que lideran equipos diversos con respeto y responsabilidad social."
+      "semestre": 2,
+      "nombre": "Ciudadanía y Derechos Humanos",
+      "sigla": "HH112",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🤝",
+      "descripcion": "Explora tus derechos, responsabilidades y formas de participar en la sociedad. La tecnología también necesita profesionales conscientes de su impacto humano."
     },
     {
-      "semestre": 3, "nombre": "Estructuras de Datos", "icono": "🌳",
-      "descripcion": "Enseña a organizar la información en memoria de forma eficiente para que los programas sean rápidos y escalables.",
-      "temas": ["Listas enlazadas", "Pilas y colas", "Árboles binarios", "Recursividad", "Complejidad algorítmica"],
-      "utilidad": "Es lo que diferencia un programa que funciona de uno que funciona bien con millones de datos.",
-      "herramientas": ["Java", "C++"]
+      "semestre": 3,
+      "nombre": "Cálculo II",
+      "sigla": "MC210",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC120",
+      "icono": "∫",
+      "descripcion": "Profundiza en las herramientas del cálculo para describir cambios y acumulaciones. Las funciones y sus modelos abren nuevas formas de analizar problemas.",
+      "temas": [
+        "Funciones y límites",
+        "Se analizan los límites de funciones algebraicas y trascendentes, así como la identificación de asíntotas horizontales, verticales y…",
+        "Se aborda la continuidad de funciones y se introducen los fundamentos de la derivación, con énfasis en el cálculo de derivadas sucesivas y…",
+        "Derivadas, integrales y aplicaciones"
+      ],
+      "utilidad": "Propone, analiza, valida e interpreta modelos de situaciones reales sencillas, utilizando las herramientas matemáticas más adecuadas a los fines que se persigan."
     },
     {
-      "semestre": 3, "nombre": "Redes II", "icono": "📡",
-      "descripcion": "Avanza hacia redes empresariales: enrutamiento, conmutación y configuración de equipos de red.",
-      "temas": ["Enrutamiento estático y dinámico", "VLANs", "Protocolos de enrutamiento", "Redes inalámbricas", "Seguridad en redes"],
-      "utilidad": "Te prepara para administrar la infraestructura de comunicaciones de una organización.",
-      "herramientas": ["Cisco Packet Tracer", "Wireshark"]
+      "semestre": 3,
+      "nombre": "Estadística I",
+      "sigla": "MC215",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MC125",
+      "icono": "📊",
+      "descripcion": "Convierte conjuntos de datos en información comprensible. Aprende a resumir, visualizar e interpretar resultados antes de sacar conclusiones.",
+      "temas": [
+        "Estadística descriptiva",
+        "Medidas de tendencia central y dispersión",
+        "Distribuciones bidimensionales",
+        "Probabilidad y distribuciones"
+      ],
+      "utilidad": "Capacidad organizativa y de planificación Capacidad técnica para el manejo de herramientas estadísticas Capacidad analítica e interpretativa Capacidad para generalizar Capacidad de relación con el entorno Capacidad de…"
     },
     {
-      "semestre": 3, "nombre": "Contabilidad de Costos I", "icono": "🏭",
-      "descripcion": "Enseña a calcular y controlar cuánto cuesta producir un bien o servicio dentro de una empresa.",
-      "temas": ["Elementos del costo", "Materia prima y mano de obra", "Costos indirectos", "Sistemas de costeo", "Hoja de costos"],
-      "utilidad": "Base para desarrollar sistemas de costos y apoyar decisiones de precios y producción.",
-      "herramientas": ["Excel"]
-    },
-
-    {
-      "semestre": 4, "nombre": "Ética y Valores", "icono": "⚖️",
-      "descripcion": "Analiza la responsabilidad ética del profesional, especialmente en el manejo de información y tecnología.",
-      "temas": ["Ética profesional", "Valores y moral", "Ética en la tecnología", "Privacidad de datos", "Responsabilidad social"],
-      "utilidad": "Un ingeniero maneja datos sensibles: la ética guía cómo usarlos correctamente."
-    },
-    {
-      "semestre": 4, "nombre": "Estadística II", "icono": "📐",
-      "descripcion": "Pasa de describir datos a sacar conclusiones: inferencia, pruebas de hipótesis y modelos de regresión.",
-      "temas": ["Muestreo", "Estimación", "Pruebas de hipótesis", "Regresión y correlación", "Análisis de varianza"],
-      "utilidad": "Permite tomar decisiones basadas en datos y es la base de la ciencia de datos.",
-      "herramientas": ["Excel", "SPSS", "R"]
+      "semestre": 3,
+      "nombre": "Programación Avanzada y Análisis de Datos",
+      "sigla": "SC210",
+      "horasTeoricas": 2,
+      "horasPracticas": 4,
+      "creditos": 10,
+      "requisitos": "SC120",
+      "icono": "🐍",
+      "descripcion": "Lleva tu programación al trabajo con datos reales: organízalos, analízalos y presenta hallazgos claros con herramientas de computación científica.",
+      "temas": [
+        "Análisis de datos con NumPy y Pandas",
+        "Computación científica con SciPy",
+        "Estadística y análisis exploratorio",
+        "Visualización con Matplotlib y Seaborn"
+      ],
+      "utilidad": "Aportar competencias conceptuales en estructuras de datos, álgebra numérica y fundamentos estadísticos que permiten al graduado comprender la naturaleza de la información y las limitaciones de los modelos…"
     },
     {
-      "semestre": 4, "nombre": "Programación Aplicada", "icono": "🧩",
-      "descripcion": "Aplica la programación orientada a objetos para construir aplicaciones completas que resuelven problemas reales.",
-      "temas": ["Clases y objetos", "Herencia y polimorfismo", "Interfaces gráficas", "Manejo de archivos", "Conexión a bases de datos"],
-      "utilidad": "Aquí desarrollas tus primeras aplicaciones de escritorio con calidad profesional.",
-      "herramientas": ["Java", "C#", "Git"]
+      "semestre": 3,
+      "nombre": "Redes II",
+      "sigla": "TR210",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "TR120",
+      "icono": "🔌",
+      "descripcion": "Pasa de entender una red a configurarla. Conmutación, enrutamiento y protocolos te muestran cómo mantener conectados sistemas cada vez más complejos.",
+      "temas": [
+        "Introducción a redes conmutadas",
+        "Configuración básica de la conmutación",
+        "Enrutamiento estático y dinámico",
+        "OSPF de área única."
+      ],
+      "utilidad": "Capacidades profesionales: Utilizar los conceptos fundamentales de Redes de Computadoras."
     },
     {
-      "semestre": 4, "nombre": "Sistemas Operativos", "icono": "🖥️",
-      "descripcion": "Explica lo que ocurre dentro de Windows y Linux: cómo se administran los procesos, la memoria y los archivos.",
-      "temas": ["Procesos e hilos", "Planificación del CPU", "Gestión de memoria", "Sistemas de archivos", "Concurrencia"],
-      "utilidad": "Entender el sistema operativo te permite crear software eficiente y administrar servidores.",
-      "herramientas": ["Linux", "Windows"]
+      "semestre": 3,
+      "nombre": "Sistemas Digitales",
+      "sigla": "MR210",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MR120",
+      "icono": "💾",
+      "descripcion": "Acércate a la arquitectura de los computadores y sus componentes digitales. Verás cómo se representa y procesa la información dentro de una máquina.",
+      "temas": [
+        "Conceptos básicos del computador —Definición y componentes fundamentales",
+        "representación de la información (binario, hexadecimal, codificaciones)",
+        "unidades funcionales (CPU, memoria, E/S)",
+        "señales y sincronización"
+      ],
+      "utilidad": "Analiza y diseña software para programación de bajo nivel de sistemas digitales."
     },
     {
-      "semestre": 4, "nombre": "Matemática Financiera I", "icono": "💰",
-      "descripcion": "Estudia el valor del dinero en el tiempo y las herramientas para evaluar préstamos, ahorros e inversiones.",
-      "temas": ["Interés simple y compuesto", "Tasas nominales y efectivas", "Anualidades", "Amortización", "Valor presente y futuro"],
-      "utilidad": "Indispensable para desarrollar sistemas bancarios y financieros, y para evaluar proyectos.",
-      "herramientas": ["Excel"]
+      "semestre": 3,
+      "nombre": "Electiva I",
+      "sigla": null,
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🌟",
+      "descripcion": "Un espacio para orientar tu formación hacia un tema que te interese. La materia concreta depende de la oferta de asignaturas electivas."
     },
     {
-      "semestre": 4, "nombre": "Certificación Idioma Inglés", "icono": "🇬🇧",
-      "descripcion": "Acredita tu dominio del inglés, el idioma de la tecnología, la documentación técnica y los negocios internacionales.",
-      "temas": ["Comprensión lectora", "Comunicación oral", "Redacción", "Inglés técnico", "Preparación para la certificación"],
-      "utilidad": "Abre las puertas a empleos internacionales, trabajo remoto y certificaciones tecnológicas."
-    },
-
-    {
-      "semestre": 5, "nombre": "Investigación Operativa I", "icono": "🎯",
-      "descripcion": "Usa modelos matemáticos para encontrar la mejor forma de asignar recursos limitados en una organización.",
-      "temas": ["Programación lineal", "Método simplex", "Problemas de transporte", "Asignación", "Análisis de sensibilidad"],
-      "utilidad": "Optimiza rutas, inventarios y producción: decisiones que ahorran dinero real a las empresas.",
-      "herramientas": ["Excel Solver", "LINGO"]
-    },
-    {
-      "semestre": 5, "nombre": "Análisis Estadístico de Calidad", "icono": "✅",
-      "descripcion": "Aplica la estadística para medir, controlar y mejorar la calidad de procesos y productos.",
-      "temas": ["Control estadístico de procesos", "Gráficos de control", "Capacidad de proceso", "Muestreo de aceptación", "Six Sigma"],
-      "utilidad": "Te permite detectar fallas y mejorar procesos con datos, tanto en software como en producción.",
-      "herramientas": ["Minitab", "Excel"]
+      "semestre": 4,
+      "nombre": "Cálculo III",
+      "sigla": "MC220",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC210",
+      "icono": "∂",
+      "descripcion": "Aprende a describir fenómenos que cambian con el tiempo mediante ecuaciones diferenciales y otras herramientas matemáticas de modelación.",
+      "temas": [
+        "Teoría general de las ecuaciones diferenciales.",
+        "Ecuaciones diferenciales ordinarias de primer orden.",
+        "Ecuaciones diferenciales de orden superior.",
+        "La transformada de Laplace."
+      ],
+      "utilidad": "Propone, analiza, valida e interpreta modelos de situaciones reales sencillas, utilizando las herramientas matemáticas más adecuadas a los fines que se persigan."
     },
     {
-      "semestre": 5, "nombre": "Bases de Datos", "icono": "🗄️",
-      "descripcion": "Enseña a diseñar y consultar bases de datos, el corazón de cualquier sistema de información.",
-      "temas": ["Modelo entidad-relación", "Modelo relacional", "Normalización", "Lenguaje SQL", "Procedimientos y vistas"],
-      "utilidad": "Toda aplicación guarda datos: diseñar bases sólidas es una de las habilidades más pedidas.",
-      "herramientas": ["SQL Server", "MySQL", "PostgreSQL"]
+      "semestre": 4,
+      "nombre": "Estadística II",
+      "sigla": "MC225",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC215",
+      "icono": "📉",
+      "descripcion": "Da el salto de describir datos a hacer inferencias. El muestreo y las pruebas de hipótesis te ayudan a decidir con evidencia y reconocer la incertidumbre.",
+      "temas": [
+        "Métodos de muestreo, Estimación de Parámetros.",
+        "Pruebas de Hipótesis.",
+        "Anavo.",
+        "Chicuadrado."
+      ],
+      "utilidad": "Capacidad organizativa y de planificación."
     },
     {
-      "semestre": 5, "nombre": "Estructura de Datos Avanzadas", "icono": "🕸️",
-      "descripcion": "Profundiza en estructuras y algoritmos complejos para resolver problemas de gran escala.",
-      "temas": ["Grafos y recorridos", "Árboles balanceados", "Tablas hash", "Algoritmos de ordenamiento", "Caminos mínimos"],
-      "utilidad": "Son los algoritmos detrás de GPS, redes sociales y buscadores.",
-      "herramientas": ["Java", "C++"]
+      "semestre": 4,
+      "nombre": "Programación Orientada a Objetos",
+      "sigla": "SC222",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC120",
+      "icono": "🧩",
+      "descripcion": "Construye programas a partir de objetos que colaboran entre sí. Organizar el código en clases facilita crear sistemas más claros y fáciles de mantener.",
+      "temas": [
+        "Clases, objetos y métodos",
+        "Encapsulamiento y abstracción",
+        "Herencia",
+        "Aplicación de la programación orientada a objetos"
+      ],
+      "utilidad": "aportaR las bases conceptuales y procedimentales necesarias para que el graduado diseñe y desarrolle software robusto, escalable y mantenible, consolidando competencias técnicas en modelado, implementación y pruebas de…"
     },
     {
-      "semestre": 5, "nombre": "Laboratorio de Sistemas Operativos I", "icono": "🐧",
-      "descripcion": "Práctica intensiva de instalación, configuración y administración de sistemas operativos.",
-      "temas": ["Instalación de sistemas", "Línea de comandos", "Usuarios y permisos", "Scripts en Bash", "Gestión de servicios"],
-      "utilidad": "Desarrolla las habilidades prácticas de un administrador de sistemas.",
-      "herramientas": ["Linux", "Bash", "VirtualBox"]
+      "semestre": 4,
+      "nombre": "Sistemas Operativos I",
+      "sigla": "SC224",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "TR210",
+      "icono": "⚙️",
+      "descripcion": "Descubre el software que coordina memoria, procesos y dispositivos. Entender un sistema operativo es entender cómo un computador trabaja por dentro.",
+      "temas": [
+        "Fundamentos y evolución de los sistemas operativos",
+        "Funciones básicas y objetivos principales.",
+        "Tipos de sistemas operativos (monotarea, multitarea, distribuidos, tiempo real).",
+        "Arquitectura del computador e interacción con el sistema operativo"
+      ],
+      "utilidad": "Aportar competencias conceptuales y procedimentales esenciales para diseñar y administrar infraestructuras de software seguras y eficientes."
     },
     {
-      "semestre": 5, "nombre": "Administración Financiera I", "icono": "🏦",
-      "descripcion": "Estudia cómo una empresa gestiona su dinero en el corto plazo para mantenerse sana y rentable.",
-      "temas": ["Análisis financiero", "Capital de trabajo", "Gestión de efectivo", "Cuentas por cobrar", "Inventarios"],
-      "utilidad": "Te permite diseñar herramientas que apoyen las decisiones financieras de la gerencia.",
-      "herramientas": ["Excel"]
-    },
-
-    {
-      "semestre": 6, "nombre": "Emprendimiento y Gestión de la Innovación", "icono": "🚀",
-      "descripcion": "Guía el camino de una idea a un negocio: detectar oportunidades, validar soluciones y crear modelos de negocio.",
-      "temas": ["Detección de oportunidades", "Design Thinking", "Modelo Canvas", "Validación de ideas", "Startups tecnológicas"],
-      "utilidad": "Te prepara para crear tu propia empresa tecnológica o innovar dentro de una organización."
+      "semestre": 4,
+      "nombre": "Gestión del Talento Humano",
+      "sigla": "BA311",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "BA110",
+      "icono": "👥",
+      "descripcion": "Las organizaciones dependen de las personas que las forman. Esta materia explora cómo atraer, desarrollar y acompañar talento para alcanzar objetivos comunes."
     },
     {
-      "semestre": 6, "nombre": "Administración de Recursos Humanos", "icono": "👥",
-      "descripcion": "Aborda la gestión del talento: cómo atraer, desarrollar y retener a las personas en una organización.",
-      "temas": ["Reclutamiento y selección", "Capacitación", "Evaluación del desempeño", "Remuneraciones", "Clima laboral"],
-      "utilidad": "Útil para liderar equipos de desarrollo y diseñar sistemas de gestión de personal."
+      "semestre": 4,
+      "nombre": "Inglés (Certificación)",
+      "sigla": "ID110",
+      "horasTeoricas": 0,
+      "horasPracticas": 0,
+      "creditos": 0,
+      "requisitos": null,
+      "icono": "🌎",
+      "descripcion": "La certificación de inglés acredita una habilidad clave para leer documentación, comunicar ideas y moverte con soltura en entornos tecnológicos internacionales."
     },
     {
-      "semestre": 6, "nombre": "Ingeniería de Software", "icono": "🛠️",
-      "descripcion": "Enseña a construir software de calidad de forma profesional, desde los requisitos hasta la entrega.",
-      "temas": ["Ciclo de vida del software", "Requisitos", "Modelado UML", "Metodologías ágiles (Scrum)", "Pruebas de software"],
-      "utilidad": "Así trabajan los equipos de desarrollo en la industria: aprenderás a planificar y entregar proyectos reales.",
-      "herramientas": ["Git", "Jira", "UML"]
+      "semestre": 4,
+      "nombre": "Electiva II",
+      "sigla": null,
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🌱",
+      "descripcion": "Amplía tu recorrido con una asignatura optativa. Puedes profundizar en un área de interés según las opciones que ofrezca la carrera."
     },
     {
-      "semestre": 6, "nombre": "Laboratorio de Sistemas Operativos II", "icono": "🖧",
-      "descripcion": "Lleva la administración de sistemas al nivel de servidor: servicios de red, seguridad y automatización.",
-      "temas": ["Servidores web y DNS", "Directorio activo", "Respaldos", "Seguridad del sistema", "Automatización"],
-      "utilidad": "Te prepara para administrar los servidores que sostienen los servicios de una empresa.",
-      "herramientas": ["Linux Server", "Windows Server"]
+      "semestre": 5,
+      "nombre": "Investigación de Operaciones e IA",
+      "sigla": "MC315",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MC225",
+      "icono": "🎯",
+      "descripcion": "Usa modelos de optimización y herramientas de IA para elegir entre alternativas, distribuir recursos y resolver decisiones complejas con criterio.",
+      "temas": [
+        "Generalidades y metodología de la investigación de Operaciones.",
+        "Metodología de la investigación operativa.",
+        "Programación lineal",
+        "Métodos de Resolución."
+      ],
+      "utilidad": "Conocer y seleccionar el modelo para la optimización en la toma de decisiones Valorar seleccionar y recomendar el modelo matemático de optimización Conocer y aplicar herramientas para el seguimiento y control de…"
     },
     {
-      "semestre": 6, "nombre": "Presupuesto", "icono": "🗓️",
-      "descripcion": "Enseña a planificar financieramente una empresa o proyecto y a controlar que se cumpla lo previsto.",
-      "temas": ["Presupuesto maestro", "Presupuesto de ventas", "Presupuesto de gastos", "Flujo de caja", "Control presupuestario"],
-      "utilidad": "Esencial para gestionar proyectos de TI dentro del tiempo y el costo previstos.",
-      "herramientas": ["Excel"]
+      "semestre": 5,
+      "nombre": "Bases de Datos Relacionales y No Relacionales",
+      "sigla": "SC310",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC210",
+      "icono": "🗄️",
+      "descripcion": "Diseña la estructura donde viven los datos de una aplicación. Compara bases relacionales y no relacionales para elegir cómo guardar y consultar información.",
+      "temas": [
+        "Fundamentos de bases de datos y modelos relacionales",
+        "Claves primarias y foráneas.",
+        "Reglas de integridad referencial.",
+        "Técnicas de normalización."
+      ],
+      "utilidad": "La asignatura fortalece el saber conceptual del estudiante al proporcionar una comprensión profunda de los modelos de datos relacionales y no relacionales, esenciales para el diseño de soluciones informáticas robustas."
     },
     {
-      "semestre": 6, "nombre": "Análisis para la Toma de Decisiones", "icono": "🧭",
-      "descripcion": "Aplica técnicas cuantitativas para evaluar alternativas y elegir la mejor opción bajo incertidumbre.",
-      "temas": ["Teoría de decisiones", "Árboles de decisión", "Análisis de riesgo", "Simulación", "Decisiones multicriterio"],
-      "utilidad": "Combina datos y modelos para apoyar a la gerencia con decisiones mejor fundamentadas."
-    },
-
-    {
-      "semestre": 7, "nombre": "Sistemas de Información", "icono": "🗂️",
-      "descripcion": "Estudia cómo la información y la tecnología apoyan la operación y la estrategia de una empresa.",
-      "temas": ["Tipos de sistemas de información", "ERP y CRM", "Inteligencia de negocios", "Análisis de procesos", "Gestión de la información"],
-      "utilidad": "Es el punto de encuentro entre la informática y la administración: el corazón de esta carrera.",
-      "herramientas": ["SAP", "Power BI"]
-    },
-    {
-      "semestre": 7, "nombre": "Desarrollo de Aplicaciones Web", "icono": "🕸",
-      "descripcion": "Enseña a construir aplicaciones web completas, desde la interfaz que ve el usuario hasta el servidor y la base de datos.",
-      "temas": ["HTML, CSS y JavaScript", "Frameworks frontend", "APIs REST", "Desarrollo backend", "Despliegue de aplicaciones"],
-      "utilidad": "La web es la plataforma más usada por las empresas: aquí aprendes a crear sus sistemas.",
-      "herramientas": ["JavaScript", "React", "Node.js"]
+      "semestre": 5,
+      "nombre": "Estructuras de Datos Avanzadas e IA",
+      "sigla": "SC312",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC222",
+      "icono": "🌲",
+      "descripcion": "Explora estructuras y algoritmos que permiten manejar información a gran escala. Elegir bien cómo organizar los datos puede transformar el rendimiento de una solución de IA.",
+      "temas": [
+        "Estructuras de datos lineales y no lineales",
+        "Análisis de eficiencia con notación Big O",
+        "Selección de estructuras para IA",
+        "Algoritmos para sistemas de gran escala"
+      ],
+      "utilidad": "La asignatura contribuye a la formación de profesionales capaces de resolver problemas organizacionales mediante estructuras de datos avanzadas y algoritmos eficientes."
     },
     {
-      "semestre": 7, "nombre": "Virtualización y Computación en la Nube", "icono": "☁️",
-      "descripcion": "Explica cómo las empresas ejecutan sus sistemas en servidores virtuales y en la nube.",
-      "temas": ["Máquinas virtuales", "Contenedores", "Modelos IaaS, PaaS y SaaS", "Servicios en la nube", "Escalabilidad"],
-      "utilidad": "La mayoría de las empresas migra a la nube: es una de las áreas con más demanda laboral.",
-      "herramientas": ["Docker", "AWS", "Azure"]
+      "semestre": 5,
+      "nombre": "Sistemas Operativos II",
+      "sigla": "SC314",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "SC224",
+      "icono": "🖥️",
+      "descripcion": "Profundiza en la administración de sistemas operativos y servicios. Aprende a mantener entornos de cómputo seguros, conectados y disponibles.",
+      "temas": [
+        "Infraestructura y servicios de red",
+        "Configuración de servicios esenciales",
+        "Directorios y gestión de usuarios",
+        "Seguridad y protección de la información"
+      ],
+      "utilidad": "La asignatura contribuye a formar profesionales capaces de diseñar, implementar y mantener infraestructuras de TI seguras y eficientes, integrando saberes conceptuales (arquitectura cliente/servidor, protocolos de red)…"
     },
     {
-      "semestre": 7, "nombre": "Resolución de Problemas y Toma de Decisiones", "icono": "💡",
-      "descripcion": "Desarrolla métodos estructurados para analizar problemas complejos y encontrar soluciones efectivas.",
-      "temas": ["Identificación de problemas", "Análisis de causa raíz", "Generación de alternativas", "Trabajo en equipo", "Implementación de soluciones"],
-      "utilidad": "Es la habilidad más valorada por los empleadores: resolver problemas de forma ordenada."
+      "semestre": 5,
+      "nombre": "Robótica",
+      "sigla": "MR310",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MR210",
+      "icono": "🤖",
+      "descripcion": "Une sensores, movimiento y programación para comprender cómo actúa un robot. La robótica convierte modelos y decisiones en acciones en el mundo físico.",
+      "temas": [
+        "Fundamentos de la robótica inteligente",
+        "Percepción robótica",
+        "Planificación de movimiento y tareas",
+        "Control inteligente"
+      ],
+      "utilidad": "La asignatura contribuye a la formación de profesionales capaces de diseñar, implementar y evaluar sistemas robóticos inteligentes aplicados en ámbitos industriales, de servicios y de investigación."
     },
     {
-      "semestre": 7, "nombre": "Gestión de Empresas Familiares y Pymes", "icono": "🏪",
-      "descripcion": "Analiza los retos de las pequeñas y medianas empresas, que son la mayoría del tejido empresarial del país.",
-      "temas": ["Características de las pymes", "Empresa familiar", "Sucesión y gobierno", "Crecimiento", "Transformación digital"],
-      "utilidad": "Las pymes necesitan digitalizarse: es un gran mercado para tus soluciones tecnológicas."
+      "semestre": 5,
+      "nombre": "Electiva III",
+      "sigla": null,
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "🔍",
+      "descripcion": "Personaliza tu formación con otra asignatura optativa y conecta lo aprendido con un campo que quieras explorar más a fondo."
     },
     {
-      "semestre": 7, "nombre": "Electiva I", "icono": "⭐",
-      "descripcion": "Materia a elección para profundizar en un área de tu interés dentro de la informática o la administración.",
-      "temas": ["Elegida por el estudiante", "Especialización temprana", "Temas de actualidad"],
-      "utilidad": "Te permite orientar tu perfil hacia el área en la que quieres destacar."
-    },
-
-    {
-      "semestre": 8, "nombre": "Gestión de Calidad Total", "icono": "🏅",
-      "descripcion": "Presenta los modelos y normas para que toda la organización trabaje con un enfoque de mejora continua.",
-      "temas": ["Filosofía de calidad total", "Normas ISO 9001", "Mejora continua (PDCA)", "Herramientas de calidad", "Calidad en el software"],
-      "utilidad": "Las empresas certificadas necesitan profesionales que entiendan y apliquen estas normas."
+      "semestre": 6,
+      "nombre": "Lógica Matemática para IA",
+      "sigla": "MC327",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC215",
+      "icono": "∴",
+      "descripcion": "La lógica matemática ofrece reglas para representar conocimiento y razonar con claridad. Es un puente natural hacia los sistemas inteligentes."
     },
     {
-      "semestre": 8, "nombre": "Gestión de Base de Datos", "icono": "🛢️",
-      "descripcion": "Profundiza en la administración de bases de datos: rendimiento, seguridad y disponibilidad de la información.",
-      "temas": ["Administración del SGBD", "Optimización de consultas", "Respaldo y recuperación", "Seguridad de datos", "Bases NoSQL"],
-      "utilidad": "Prepara para el rol de DBA, responsable de la información más valiosa de la empresa.",
-      "herramientas": ["SQL Server", "PostgreSQL", "MongoDB"]
+      "semestre": 6,
+      "nombre": "Gestión de Sistemas de Base de Datos",
+      "sigla": "SC320",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC310",
+      "icono": "🛢️",
+      "descripcion": "Aprende a administrar bases de datos más allá del diseño inicial: rendimiento, disponibilidad y organización para que la información siga siendo útil y confiable.",
+      "temas": [
+        "Optimización y administración de SGBD",
+        "Bases de datos distribuidas y arquitecturas",
+        "Bases de datos analíticas y big data",
+        "minería de datos y machine learning aplicados a la toma de decisiones."
+      ],
+      "utilidad": "La asignatura contribuye al desarrollo de competencias conceptuales en modelado y administración avanzada de bases de datos, procedimentales en optimización de consultas y diseño de soluciones analíticas, y tecnológicas…"
     },
     {
-      "semestre": 8, "nombre": "Estrategia Empresarial", "icono": "♟️",
-      "descripcion": "Enseña a analizar el entorno competitivo y a formular estrategias que den ventaja a la empresa.",
-      "temas": ["Análisis FODA", "Fuerzas de Porter", "Ventaja competitiva", "Estrategias de crecimiento", "Estrategia digital"],
-      "utilidad": "Te permite alinear la tecnología con los objetivos estratégicos del negocio."
+      "semestre": 6,
+      "nombre": "Computación Móvil y Ubicua",
+      "sigla": "SC322",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC312",
+      "icono": "📱",
+      "descripcion": "Imagina servicios que acompañan a las personas en movimiento. La computación móvil y ubicua combina dispositivos, conectividad y aplicaciones presentes en la vida diaria.",
+      "temas": [
+        "Fundamentos de la computación móvil y ubicua",
+        "Redes móviles y comunicaciones inalámbricas",
+        "Desarrollo de aplicaciones móviles",
+        "Agentes móviles y seguridad"
+      ],
+      "utilidad": "La asignatura contribuye a la formación de profesionales capaces de sistematizar y resolver problemas vinculados con la tecnología móvil y ubicua, integrando saberes conceptuales, procedimentales y tecnológicos."
     },
     {
-      "semestre": 8, "nombre": "Evaluación de Proyectos de Ingeniería", "icono": "📋",
-      "descripcion": "Enseña a determinar si un proyecto es viable técnica, económica y financieramente antes de invertir en él.",
-      "temas": ["Estudio de mercado", "Estudio técnico", "Flujo de caja del proyecto", "VAN y TIR", "Análisis de sensibilidad"],
-      "utilidad": "Te permite justificar con números la inversión en un proyecto tecnológico.",
-      "herramientas": ["Excel"]
+      "semestre": 6,
+      "nombre": "Ingeniería de Software I",
+      "sigla": "SC326",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC222",
+      "icono": "🛠️",
+      "descripcion": "Transforma una necesidad en un plan de software. Requisitos, procesos y trabajo en equipo te ayudan a construir soluciones con método.",
+      "temas": [
+        "Proceso de construcción del software.",
+        "Normas y estándares.",
+        "Determinar requerimientos y los métodos para su identificación.",
+        "Planificación y gestión de proyectos de software."
+      ],
+      "utilidad": "Interpretación del escenario: Conocer y determinar el problema, la especificación."
     },
     {
-      "semestre": 8, "nombre": "Pasantía Profesional (300 horas)", "icono": "💼",
-      "descripcion": "Experiencia real de trabajo en una empresa o institución, donde aplicas todo lo aprendido durante 300 horas.",
-      "temas": ["Trabajo en una empresa real", "Aplicación de conocimientos", "Experiencia profesional", "Informe de pasantía"],
-      "utilidad": "Es tu primera experiencia laboral y muchas veces la puerta de entrada a tu primer empleo."
+      "semestre": 6,
+      "nombre": "Proyectos I",
+      "sigla": "SC328",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC225",
+      "icono": "📐",
+      "descripcion": "Aprende a convertir una idea en un proyecto evaluable. Analiza costos, mercados y viabilidad para decidir si vale la pena llevarla adelante.",
+      "temas": [
+        "Fundamentos financieros y matemáticos",
+        "Economía aplicada y análisis de mercados",
+        "Contabilidad y análisis financiero",
+        "Interpretación de estados financieros, flujo de caja, indicadores de rentabilidad, análisis de riesgos y sostenibilidad."
+      ],
+      "utilidad": "La asignatura fortalece competencias conceptuales en finanzas y economía, procedimentales en el uso de modelos de evaluación, actitudinales en la toma de decisiones éticas y tecnológicas mediante el uso de software…"
     },
     {
-      "semestre": 8, "nombre": "Dirección Estratégica", "icono": "🧑‍💼",
-      "descripcion": "Desarrolla el liderazgo necesario para conducir una organización hacia el cumplimiento de sus objetivos.",
-      "temas": ["Liderazgo", "Planificación estratégica", "Cuadro de mando integral", "Gestión del cambio", "Gobierno corporativo"],
-      "utilidad": "Te prepara para cargos gerenciales, como jefe de sistemas o director de tecnología (CIO)."
+      "semestre": 6,
+      "nombre": "Programación Paralela y Distribuida",
+      "sigla": "SC324",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "SC314",
+      "icono": "🕸️",
+      "descripcion": "Cuando una sola máquina no basta, el trabajo se reparte. Explora cómo coordinar tareas y datos entre procesadores y sistemas distribuidos.",
+      "temas": [
+        "Fundamentos de la programación paralela y distribuida",
+        "modelos de programación (memoria compartida y distribuida), Ley de Amdahl y Ley de Gustafson.",
+        "Modelos de programación paralela",
+        "Desafíos y aplicaciones avanzadas"
+      ],
+      "utilidad": "La asignatura fortalece el perfil del graduado al dotarlo de saberes conceptuales sobre arquitecturas paralelas y distribuidas, saberes procedimentales en el diseño y optimización de sistemas de alto rendimiento, y…"
     },
     {
-      "semestre": 8, "nombre": "Electiva II", "icono": "🌟",
-      "descripcion": "Segunda materia a elección para especializarte en el área que más te apasiona.",
-      "temas": ["Elegida por el estudiante", "Profundización", "Tendencias del mercado"],
-      "utilidad": "Completa tu perfil profesional con una especialidad diferenciadora."
-    },
-
-    {
-      "semestre": 9, "nombre": "Sistemas Inteligentes e Innovación", "icono": "🤖",
-      "descripcion": "Introduce la inteligencia artificial y el aprendizaje automático aplicados a la innovación en las empresas.",
-      "temas": ["Inteligencia artificial", "Machine learning", "Redes neuronales", "Análisis predictivo", "Automatización inteligente"],
-      "utilidad": "La IA está transformando todas las industrias: aquí aprendes a aplicarla en negocios reales.",
-      "herramientas": ["Python", "scikit-learn", "TensorFlow"]
-    },
-    {
-      "semestre": 9, "nombre": "Gestión de Sistemas", "icono": "⚙️",
-      "descripcion": "Aborda cómo se gobiernan y gestionan los servicios de TI para que apoyen de forma eficiente al negocio.",
-      "temas": ["Gobierno de TI", "ITIL", "COBIT", "Gestión de servicios", "Seguridad de la información"],
-      "utilidad": "Te prepara para dirigir el área de sistemas de una organización."
+      "semestre": 7,
+      "nombre": "Modelación y Simulación con IA",
+      "sigla": "MC415",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC315",
+      "icono": "🎲",
+      "descripcion": "Crea modelos para ensayar escenarios antes de actuar. La simulación, apoyada por técnicas de IA, permite estudiar sistemas complejos sin intervenir directamente en ellos.",
+      "temas": [
+        "Introducción a la simulación, componentes de un sistema.",
+        "Generación de números pseudoaleatorios.",
+        "Variables aleatorias, determinación del tipo de distribución de un conjunto de datos, pruebas de bondad de ajuste, generación de variables…",
+        "Modelado y simulación basada en agentes, uso de software Anylogic."
+      ],
+      "utilidad": "Diseñar y evaluar procesos de producción de bienes y servicios eficientes, utilizando herramientas de simulación para mejorar el rendimiento del sistema."
     },
     {
-      "semestre": 9, "nombre": "Modalidad de Graduación I", "icono": "🎓",
-      "descripcion": "Inicio de tu proyecto de grado: defines el problema, investigas y planificas la solución.",
-      "temas": ["Selección del tema", "Metodología de investigación", "Marco teórico", "Perfil del proyecto"],
-      "utilidad": "Es el primer paso para obtener tu título de ingeniero."
+      "semestre": 7,
+      "nombre": "Desarrollo de Aplicaciones WEB",
+      "sigla": "SC412",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC320",
+      "icono": "🌍",
+      "descripcion": "Diseña experiencias que viven en la web, desde la interfaz hasta los servicios que la sostienen. Une desarrollo, seguridad y despliegue en aplicaciones completas.",
+      "temas": [
+        "Fundamentos del Desarrollo Web y Frontend",
+        "Backend y Servicios en la Nube",
+        "Microservicios y DevOps",
+        "Seguridad y Aplicaciones Móviles"
+      ],
+      "utilidad": "La asignatura contribuye a formar profesionales capaces de diseñar, implementar y mantener soluciones digitales escalables y seguras."
     },
     {
-      "semestre": 9, "nombre": "Proyectos de Planificación Estratégica", "icono": "🗺️",
-      "descripcion": "Aplica la planificación estratégica a proyectos reales, integrando la visión del negocio y la tecnología.",
-      "temas": ["Plan estratégico", "Gestión de proyectos", "Indicadores de gestión", "Portafolio de proyectos", "Plan estratégico de TI"],
-      "utilidad": "Integra todo lo aprendido para planificar el futuro tecnológico de una organización.",
-      "herramientas": ["MS Project"]
+      "semestre": 7,
+      "nombre": "Análisis y Diseño de Sistemas",
+      "sigla": "SC410",
+      "horasTeoricas": 2,
+      "horasPracticas": 4,
+      "creditos": 10,
+      "requisitos": "SC310",
+      "icono": "🗺️",
+      "descripcion": "Escucha el problema, representa sus procesos y diseña una solución coherente. Es el puente entre lo que una organización necesita y el sistema que se construirá.",
+      "temas": [
+        "Fundamentos del análisis y diseño de sistemas",
+        "Modelado UML",
+        "Diagramas de comportamiento",
+        "Arquitecturas de software"
+      ],
+      "utilidad": "Este programa analítico es crucial para los profesionales de la ingeniería de software y el desarrollo de sistemas."
     },
-
     {
-      "semestre": 10, "nombre": "Modalidad de Graduación II", "icono": "🏆",
-      "descripcion": "Culminación de tu carrera: desarrollas, presentas y defiendes tu proyecto de grado ante un tribunal.",
-      "temas": ["Desarrollo del proyecto", "Implementación", "Documentación final", "Defensa de grado"],
-      "utilidad": "¡La meta! Al aprobarla obtienes tu título de Ingeniero Informático Administrativo."
+      "semestre": 7,
+      "nombre": "Virtualización y Computación en la Nube",
+      "sigla": "SC414",
+      "horasTeoricas": 2,
+      "horasPracticas": 4,
+      "creditos": 10,
+      "requisitos": "SC322",
+      "icono": "☁️",
+      "descripcion": "Descubre cómo crear y administrar entornos de cómputo flexibles en la nube. Virtualización y servicios cloud permiten escalar aplicaciones y recursos según la demanda.",
+      "temas": [
+        "Fundamentos y modelos",
+        "modelos de servicio y despliegue cloud",
+        "criterios de selección entre nube pública, privada e híbrida.",
+        "Plataformas y tecnologías"
+      ],
+      "utilidad": "La asignatura contribuye a las competencias conceptuales (arquitecturas cloud, modelos de virtualización, principios de escalabilidad y resiliencia), procedimentales (despliegue de VMs/containers, orquestación con…"
+    },
+    {
+      "semestre": 7,
+      "nombre": "Ingeniería de Software II",
+      "sigla": "SC416",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC326",
+      "icono": "🧪",
+      "descripcion": "Lleva la ingeniería de software hacia la calidad: pruebas, estándares y métricas para comprobar que una solución funciona y puede seguir mejorando.",
+      "temas": [
+        "Calidad y estándares",
+        "Fundamentos de pruebas",
+        "IA aplicada a pruebas",
+        "Gestión y métricas"
+      ],
+      "utilidad": "La asignatura aporta saber conceptual (normas y estándares de calidad, modelos de pruebas), saber procedimental (construcción de suites de pruebas, pipelines CI/CD, uso de frameworks como pytest y Selenium) y saber…"
+    },
+    {
+      "semestre": 7,
+      "nombre": "Electiva IV",
+      "sigla": null,
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "✨",
+      "descripcion": "La última electiva te permite profundizar en una especialidad o descubrir un tema nuevo, según la oferta disponible de la carrera."
+    },
+    {
+      "semestre": 8,
+      "nombre": "Proyectos II",
+      "sigla": "SC428",
+      "horasTeoricas": 4,
+      "horasPracticas": 2,
+      "creditos": 10,
+      "requisitos": "SC328",
+      "icono": "📋",
+      "descripcion": "Da forma completa a un proyecto: plantea objetivos, estudia su viabilidad y prepara una propuesta que pueda sostenerse en la práctica.",
+      "temas": [
+        "Concepto de Proyecto.",
+        "La Formulación de Proyectos y Planificación.",
+        "Tipología de Proyectos.",
+        "Etapas de la Elaboración de Proyectos"
+      ],
+      "utilidad": "La asignatura de Elaboración y EvaluacLa asignatura fortalece el pensamiento analítico y estratégico al desarrollar competencias para identificar oportunidades de inversión y evaluar la viabilidad integral de proyectos…"
+    },
+    {
+      "semestre": 8,
+      "nombre": "Inteligencia Artificial I",
+      "sigla": "SC422",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "MC327",
+      "icono": "🧠",
+      "descripcion": "Entra al aprendizaje automático: entrena modelos, evalúa resultados y descubre cómo encontrar patrones en datos para hacer predicciones útiles.",
+      "temas": [
+        "Aprendizaje supervisado y evaluación de modelos",
+        "regresión lineal y regularizada",
+        "clasificación binaria y multiclase (regresión logística, SVM)",
+        "árboles de decisión y ensamblados (Random Forest, Gradient Boosting)"
+      ],
+      "utilidad": "La asignatura aporta saber conceptual sobre teorías del aprendizaje, representación de datos y arquitecturas de redes neuronales; saber procedimental en la selección, entrenamiento, evaluación y despliegue de modelos…"
+    },
+    {
+      "semestre": 8,
+      "nombre": "Ciencia de Datos y Big Data Analitics",
+      "sigla": "SC420",
+      "horasTeoricas": 2,
+      "horasPracticas": 4,
+      "creditos": 10,
+      "requisitos": "SC410",
+      "icono": "📊",
+      "descripcion": "Trabaja con grandes volúmenes de información y sigue su recorrido desde la captura hasta el análisis. La ciencia de datos convierte datos dispersos en decisiones.",
+      "temas": [
+        "Fundamentos y arquitectura de datos",
+        "Procesamiento por lotes y en tiempo real",
+        "Herramientas y plataformas",
+        "Gobernanza, calidad y ética de datos"
+      ],
+      "utilidad": "El profesional será capaz de aportar conceptualizar sobre modelos de datos, arquitecturas distribuidas y fundamentos de streaming; Procedimientos en diseño, implementación y despliegue de pipelines con herramientas como…"
+    },
+    {
+      "semestre": 8,
+      "nombre": "Ciberseguridad para Sistemas Inteligentes",
+      "sigla": "SC424",
+      "horasTeoricas": 3,
+      "horasPracticas": 3,
+      "creditos": 10,
+      "requisitos": "SC414",
+      "icono": "🛡️",
+      "descripcion": "Protege sistemas conectados e inteligentes frente a riesgos reales. Aprende a identificar amenazas y diseñar defensas para datos, servicios y modelos.",
+      "temas": [
+        "Fundamentos y Marco Normativo",
+        "modelos de amenaza",
+        "criptografía aplicada",
+        "marcos y estándares (NIST CSF) y principios de IA para seguridad."
+      ],
+      "utilidad": "Implementar soluciones avanzadas de ciberseguridad: Utilizar IA para la detección de anomalías y comportamientos maliciosos, así como aplicar técnicas de aprendizaje automático para la clasificación de malware y ataques."
+    },
+    {
+      "semestre": 8,
+      "nombre": "Pasantía Profesional (300 horas)",
+      "sigla": "SC427",
+      "horasTeoricas": 0,
+      "horasPracticas": 0,
+      "creditos": 0,
+      "requisitos": "SC322",
+      "icono": "💼",
+      "descripcion": "Lleva lo aprendido a un entorno profesional durante 300 horas de práctica. Es la oportunidad de colaborar en problemas reales y conocer cómo trabaja un equipo.",
+      "temas": [
+        "300 horas reloj realizadas en instituciones privadas o publicas en áreas afines a su formación."
+      ],
+      "utilidad": "La Pasantía Profesional y Social aporta al estudiantes la oportunidad de adquirir experiencia, seguridad y visibilidad como futuro profesional."
+    },
+    {
+      "semestre": 8,
+      "nombre": "Innovación y Emprendimiento",
+      "sigla": "SC429",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "MC315",
+      "icono": "💡",
+      "descripcion": "Convierte una oportunidad en una propuesta: explora necesidades, prueba ideas y diseña modelos de negocio para llevar nuevas soluciones al mundo.",
+      "temas": [
+        "Ecosistema de innovación",
+        "Identificación de oportunidades",
+        "Modelos de negocio Canvas",
+        "Validación de hipótesis"
+      ],
+      "utilidad": "La asignatura aporta a los profesionales saberes conceptuales (ecosistemas de emprendimiento, modelos de negocio, vigilancia tecnológica) y procedimentales (design thinking, lean startup, desarrollo de MVP…"
+    },
+    {
+      "semestre": 9,
+      "nombre": "Inteligencia Artificial II",
+      "sigla": "SC512",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "SC422-SC420",
+      "icono": "🤖",
+      "descripcion": "Profundiza en proyectos de IA desde los datos y los modelos hasta su despliegue. También examina riesgos, gobernanza y uso responsable.",
+      "temas": [
+        "Fundamentos y Gobernanza",
+        "Gestión de riesgos y control de versiones.",
+        "Gobernanza de proyectos de IA",
+        "Políticas de uso responsable y sostenibilidad."
+      ],
+      "utilidad": "La asignatura contribuye a que el graduado diseñe y gestione sistemas inteligentes escalables, integrando saberes conceptuales (modelos, teoría del aprendizaje), procedimentales (ingeniería de datos, MLOps, despliegue)…"
+    },
+    {
+      "semestre": 9,
+      "nombre": "Modalidad de Grado I",
+      "sigla": "SC515",
+      "horasTeoricas": 1,
+      "horasPracticas": 1,
+      "creditos": 8,
+      "requisitos": "SC424-SC422",
+      "icono": "📝",
+      "descripcion": "Empieza a construir tu proyecto de grado: define una pregunta, elige un método y prepara un plan de trabajo que pueda convertirse en una investigación o solución sólida.",
+      "temas": [
+        "Fundamentos metodológicos y epistemológicos — Metodología de la investigación",
+        "paradigmas y enfoques (cuantitativo, cualitativo, mixto)",
+        "formulación del problema",
+        "preguntas e hipótesis"
+      ],
+      "utilidad": "Aporte al perfil."
+    },
+    {
+      "semestre": 9,
+      "nombre": "Gestión de Sistemas",
+      "sigla": "SC510",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "SC410-SC416",
+      "icono": "🧭",
+      "descripcion": "Aprende a planificar y coordinar sistemas dentro de una organización. Reúne requisitos, diseño y gestión para que la tecnología responda a objetivos concretos.",
+      "temas": [
+        "Fundamentos y planificación de sistemas",
+        "ingeniería de requisitos",
+        "modelado con UML",
+        "normas de especificación"
+      ],
+      "utilidad": "La asignatura contribuye a formar ingenieros capaces de sistematizar problemas, seleccionar alternativas técnicas y diseñar soluciones escalables que integren software, datos y componentes de IA."
+    },
+    {
+      "semestre": 9,
+      "nombre": "Proyectos Globales de Nuevas Tecnologías",
+      "sigla": "SC518",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": "SC429",
+      "icono": "🚀",
+      "descripcion": "Explora tecnologías emergentes a través de proyectos con alcance amplio. Investiga una oportunidad, diseña una propuesta y comunica su posible impacto.",
+      "temas": [
+        "Fundamentos de investigación y diseño de proyectos",
+        "revisión bibliográfica y estado del arte",
+        "hipótesis y preguntas de investigación",
+        "diseño metodológico (cuantitativo, cualitativo, mixto)"
+      ],
+      "utilidad": "El perfil del graduado tendrá competencias conceptuales (marcos de gestión de proyectos, investigación aplicada, fundamentos de blockchain e IA), procedimentales (formulación de proyectos, diseño metodológico, gestión…"
+    },
+    {
+      "semestre": 9,
+      "nombre": "Ética y Valores",
+      "sigla": "SC319",
+      "horasTeoricas": 2,
+      "horasPracticas": 2,
+      "creditos": 8,
+      "requisitos": null,
+      "icono": "⚖️",
+      "descripcion": "Analiza las decisiones profesionales desde sus consecuencias humanas. La ética ayuda a construir tecnología con responsabilidad, respeto y criterio.",
+      "temas": [
+        "Fundamentos y evolución",
+        "evolución histórica",
+        "principios éticos",
+        "teorías contemporáneas"
+      ],
+      "utilidad": "La materia fortalece competencias conceptuales (teorías éticas, marcos legales y códigos deontológicos), procedimentales (análisis de casos, elaboración de contratos, gestión de conflictos) y actitudinales…"
+    },
+    {
+      "semestre": 10,
+      "nombre": "Modalidad de Grado II",
+      "sigla": "SC525",
+      "horasTeoricas": 1,
+      "horasPracticas": 1,
+      "creditos": 10,
+      "requisitos": "SC515-SC428-SC427-ID310",
+      "icono": "🎓",
+      "descripcion": "Completa tu proyecto de grado: ejecuta el plan, documenta resultados y prepara una defensa clara de lo que construiste o investigaste.",
+      "temas": [
+        "Planificación del proyecto de grado",
+        "Ejecución y seguimiento",
+        "Evaluación y defensa",
+        "Transferencia y ética"
+      ],
+      "utilidad": "La materia consolida saberes conceptuales (diseño de investigación, inferencia y validación), procedimentales (planificación de trabajo, gestión de riesgos, uso de herramientas MLOps/DevOps para reproducibilidad) y…"
     }
   ]
 }

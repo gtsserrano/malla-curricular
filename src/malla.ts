@@ -62,6 +62,9 @@ export function renderMalla(malla: Malla) {
       if (m) {
         celda.className = 'materia';
         celda.dataset.id = idMateria(m);
+        celda.setAttribute('role', 'button');
+        celda.setAttribute('tabindex', '0');
+        celda.setAttribute('aria-label', `Abrir ${m.nombre}`);
         const texto = document.createElement('span');
         texto.textContent = m.nombre;
         celda.appendChild(texto);

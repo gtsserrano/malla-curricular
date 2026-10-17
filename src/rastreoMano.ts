@@ -93,7 +93,7 @@ async function crearDetector() {
 function mensajeErrorCamara(err: unknown) {
   const nombre = (err as DOMException)?.name;
   if (!window.isSecureContext) return 'La cámara solo funciona abriendo la página en http://localhost';
-  if (nombre === 'NotAllowedError') return 'Permiso de cámara denegado: haz clic en el ícono de cámara de la barra de direcciones y permite el acceso';
+  if (nombre === 'NotAllowedError') return 'Cámara bloqueada: permite el acceso a localhost en Chrome o Edge y pulsa Reintentar cámara';
   if (nombre === 'NotFoundError' || nombre === 'OverconstrainedError') return 'No se encontró ninguna cámara conectada';
   if (nombre === 'NotReadableError') return 'La cámara está ocupada por otra aplicación (Zoom, Teams, OBS…). Ciérrala y recarga';
   return 'No se pudo iniciar la cámara: ' + ((err as Error)?.message ?? err);

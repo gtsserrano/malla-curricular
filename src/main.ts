@@ -23,6 +23,7 @@ const puntero = document.getElementById('puntero')!;
 const video = document.getElementById('camara') as HTMLVideoElement;
 const vistaCamara = document.getElementById('vista-camara')!;
 const estado = document.getElementById('estado')!;
+const activarCamara = document.getElementById('activar-camara') as HTMLButtonElement;
 
 // Tiempo que hay que mantener el puntero sobre una materia para abrirla (evita aperturas accidentales)
 const TIEMPO_ESPERA_MS = 2000;
@@ -33,6 +34,31 @@ const TOLERANCIA_PX = 30;
 const GRACIA_MS = 400;
 
 const celdas = [...document.querySelectorAll<HTMLElement>('.materia')];
+
+document.getElementById('tablero')!.addEventListener('click', (e) => {
+  const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
+  if (celda && !idAbierto()) {
+    elegir(null, performance.now());
+    abrirTarjeta(celda, malla);
+  }
+});
+
+document.getElementById('tablero')!.addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const celda = (e.target as HTMLElement).closest<HTMLElement>('.materia');
+  if (!celda || idAbierto()) return;
+  e.preventDefault();
+  elegir(null, performance.now());
+  abrirTarjeta(celda, malla);
+});
+
+document.getElementById('capa-tarjeta')!.addEventListener('click', (e) => {
+  if ((e.target as HTMLElement).closest('#cerrar-tarjeta')) {
+    cerrarTarjeta();
+    elegir(null, performance.now());
+    manoPerdida();
+  }
+});
 
 let px = 0;
 let py = 0;
@@ -112,10 +138,11 @@ function bucle() {
 }
 setInterval(bucle, 30);
 
-// El mouse también funciona (útil para desarrollar sin cámara); mantener el botón presionado equivale al puño
-addEventListener('mousemove', (e) => moverPuntero(e.clientX, e.clientY, e.buttons > 0));
-addEventListener('mousedown', (e) => moverPuntero(e.clientX, e.clientY, true));
-addEventListener('mouseup', (e) => moverPuntero(e.clientX, e.clientY, false));
+// El mouse también puede apuntar; el clic abre y el botón × o Escape cierran.
+// El puño se reserva para la mano detectada por cámara, para evitar que un clic cierre la tarjeta antes de tiempo.
+addEventListener('mousemove', (e) => {
+  if (!idAbierto()) moverPuntero(e.clientX, e.clientY);
+});
 
 addEventListener('keydown', (e) => {
   if (e.key.toLowerCase() === 'f') {
@@ -130,18 +157,42 @@ function mostrarEstado(mensaje: string, tipo: 'info' | 'ok' | 'error' = 'info') 
   estado.dataset.tipo = tipo;
 }
 
-iniciarRastreo(video, document.getElementById('esqueleto') as HTMLCanvasElement, {
-  onPosicion: (x, y, esPuno) => {
-    vistaCamara.classList.add('con-mano');
-    moverPuntero(x, y, esPuno);
-  },
-  onPerdida: () => {
-    vistaCamara.classList.remove('con-mano');
-    manoPerdida();
-  },
-  onEstado: mostrarEstado,
-}).catch((err) => {
-  console.error(err);
-  vistaCamara.classList.add('oculto');
-  mostrarEstado(err.message, 'error');
-});
+let iniciandoCamara = false;
+let camaraActiva = false;
+
+async function iniciarCamara() {
+  if (iniciandoCamara || camaraActiva) return;
+  iniciandoCamara = true;
+  activarCamara.hidden = true;
+  try {
+    await iniciarRastreo(video, document.getElementById('esqueleto') as HTMLCanvasElement, {
+      onPosicion: (x, y, esPuno) => {
+        if (!vistaCamara.classList.contains('con-mano')) {
+          mostrarEstado('Mantén el dedo sobre una materia 2 segundos · Cierra el puño para volver', 'ok');
+        }
+        vistaCamara.classList.add('con-mano');
+        moverPuntero(x, y, esPuno);
+      },
+      onPerdida: () => {
+        if (vistaCamara.classList.contains('con-mano')) {
+          mostrarEstado('Levanta una mano frente a la cámara 👋', 'ok');
+        }
+        vistaCamara.classList.remove('con-mano');
+        manoPerdida();
+      },
+      onEstado: mostrarEstado,
+    });
+    camaraActiva = true;
+    vistaCamara.classList.remove('oculto');
+  } catch (err) {
+    console.error(err);
+    vistaCamara.classList.add('oculto');
+    mostrarEstado((err as Error).message, 'error');
+    activarCamara.hidden = false;
+  } finally {
+    iniciandoCamara = false;
+  }
+}
+
+activarCamara.addEventListener('click', iniciarCamara);
+void iniciarCamara();

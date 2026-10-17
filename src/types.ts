@@ -1,11 +1,16 @@
 export interface Materia {
   nombre: string;
   semestre: number;
+  sigla?: string | null;
+  horasTeoricas: number;
+  horasPracticas: number;
+  creditos: number;
+  requisitos?: string | null;
   descripcion: string;
   /** "¿Qué aprenderás?" */
-  temas: string[];
+  temas?: string[];
   /** "¿Para qué te sirve?" */
-  utilidad: string;
+  utilidad?: string;
   herramientas?: string[];
   /** Emoji que se muestra mientras no exista la foto */
   icono?: string;
