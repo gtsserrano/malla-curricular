@@ -10,7 +10,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": null,
-      "icono": "➗",
+      "icono": "🔢",
       "descripcion": "Aquí empiezas a convertir números, ecuaciones y patrones en herramientas para resolver problemas reales. Es la base matemática que acompaña toda la carrera.",
       "temas": [
         "Conjuntos numéricos",
@@ -46,7 +46,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "🔄",
       "descripcion": "Mira más allá de las piezas sueltas: aprende a reconocer cómo interactúan las partes de un sistema y cómo un cambio puede transformar el conjunto.",
       "temas": [
         "Principios de la Teoría General de Sistemas",
@@ -140,7 +140,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "⌨️",
       "descripcion": "Da tus primeros pasos creando algoritmos y programas, mientras descubres cómo los datos y las ideas de IA pueden ayudar a resolver problemas concretos.",
       "temas": [
         "Fundamentos de programación y estructuras de datos",
@@ -176,7 +176,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "TR110",
-      "icono": "📘",
+      "icono": "⚡",
       "descripcion": "Desde el sistema binario hasta los circuitos lógicos, descubre cómo las señales eléctricas se convierten en decisiones dentro de un dispositivo digital.",
       "temas": [
         "Sistemas de numeración.",
@@ -194,7 +194,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "🤝",
       "descripcion": "Explora tus derechos, responsabilidades y formas de participar en la sociedad. La tecnología también necesita profesionales conscientes de su impacto humano."
     },
     {
@@ -223,7 +223,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "MC125",
-      "icono": "📉",
+      "icono": "📊",
       "descripcion": "Convierte conjuntos de datos en información comprensible. Aprende a resumir, visualizar e interpretar resultados antes de sacar conclusiones.",
       "temas": [
         "Estadística descriptiva",
@@ -241,7 +241,7 @@
       "horasPracticas": 4,
       "creditos": 10,
       "requisitos": "SC120",
-      "icono": "📘",
+      "icono": "🐍",
       "descripcion": "Lleva tu programación al trabajo con datos reales: organízalos, analízalos y presenta hallazgos claros con herramientas de computación científica.",
       "temas": [
         "Análisis de datos con NumPy y Pandas",
@@ -259,7 +259,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "TR120",
-      "icono": "📡",
+      "icono": "🔌",
       "descripcion": "Pasa de entender una red a configurarla. Conmutación, enrutamiento y protocolos te muestran cómo mantener conectados sistemas cada vez más complejos.",
       "temas": [
         "Introducción a redes conmutadas",
@@ -277,7 +277,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "MR120",
-      "icono": "📘",
+      "icono": "💾",
       "descripcion": "Acércate a la arquitectura de los computadores y sus componentes digitales. Verás cómo se representa y procesa la información dentro de una máquina.",
       "temas": [
         "Conceptos básicos del computador —Definición y componentes fundamentales",
@@ -295,7 +295,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "⭐",
+      "icono": "🌟",
       "descripcion": "Un espacio para orientar tu formación hacia un tema que te interese. La materia concreta depende de la oferta de asignaturas electivas."
     },
     {
@@ -306,7 +306,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC210",
-      "icono": "📘",
+      "icono": "∂",
       "descripcion": "Aprende a describir fenómenos que cambian con el tiempo mediante ecuaciones diferenciales y otras herramientas matemáticas de modelación.",
       "temas": [
         "Teoría general de las ecuaciones diferenciales.",
@@ -324,7 +324,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC215",
-      "icono": "📐",
+      "icono": "📉",
       "descripcion": "Da el salto de describir datos a hacer inferencias. El muestreo y las pruebas de hipótesis te ayudan a decidir con evidencia y reconocer la incertidumbre.",
       "temas": [
         "Métodos de muestreo, Estimación de Parámetros.",
@@ -342,7 +342,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC120",
-      "icono": "📘",
+      "icono": "🧩",
       "descripcion": "Construye programas a partir de objetos que colaboran entre sí. Organizar el código en clases facilita crear sistemas más claros y fáciles de mantener.",
       "temas": [
         "Clases, objetos y métodos",
@@ -360,7 +360,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "TR210",
-      "icono": "📘",
+      "icono": "⚙️",
       "descripcion": "Descubre el software que coordina memoria, procesos y dispositivos. Entender un sistema operativo es entender cómo un computador trabaja por dentro.",
       "temas": [
         "Fundamentos y evolución de los sistemas operativos",
@@ -378,7 +378,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "BA110",
-      "icono": "📘",
+      "icono": "👥",
       "descripcion": "Las organizaciones dependen de las personas que las forman. Esta materia explora cómo atraer, desarrollar y acompañar talento para alcanzar objetivos comunes."
     },
     {
@@ -389,7 +389,7 @@
       "horasPracticas": 0,
       "creditos": 0,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "🌎",
       "descripcion": "La certificación de inglés acredita una habilidad clave para leer documentación, comunicar ideas y moverte con soltura en entornos tecnológicos internacionales."
     },
     {
@@ -400,7 +400,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "🌟",
+      "icono": "🌱",
       "descripcion": "Amplía tu recorrido con una asignatura optativa. Puedes profundizar en un área de interés según las opciones que ofrezca la carrera."
     },
     {
@@ -411,7 +411,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "MC225",
-      "icono": "📘",
+      "icono": "🎯",
       "descripcion": "Usa modelos de optimización y herramientas de IA para elegir entre alternativas, distribuir recursos y resolver decisiones complejas con criterio.",
       "temas": [
         "Generalidades y metodología de la investigación de Operaciones.",
@@ -429,7 +429,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC210",
-      "icono": "📘",
+      "icono": "🗄️",
       "descripcion": "Diseña la estructura donde viven los datos de una aplicación. Compara bases relacionales y no relacionales para elegir cómo guardar y consultar información.",
       "temas": [
         "Fundamentos de bases de datos y modelos relacionales",
@@ -447,7 +447,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC222",
-      "icono": "📘",
+      "icono": "🌲",
       "descripcion": "Explora estructuras y algoritmos que permiten manejar información a gran escala. Elegir bien cómo organizar los datos puede transformar el rendimiento de una solución de IA.",
       "temas": [
         "Estructuras de datos lineales y no lineales",
@@ -465,7 +465,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "SC224",
-      "icono": "📘",
+      "icono": "🖥️",
       "descripcion": "Profundiza en la administración de sistemas operativos y servicios. Aprende a mantener entornos de cómputo seguros, conectados y disponibles.",
       "temas": [
         "Infraestructura y servicios de red",
@@ -483,7 +483,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "MR210",
-      "icono": "📘",
+      "icono": "🤖",
       "descripcion": "Une sensores, movimiento y programación para comprender cómo actúa un robot. La robótica convierte modelos y decisiones en acciones en el mundo físico.",
       "temas": [
         "Fundamentos de la robótica inteligente",
@@ -501,7 +501,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "🔍",
       "descripcion": "Personaliza tu formación con otra asignatura optativa y conecta lo aprendido con un campo que quieras explorar más a fondo."
     },
     {
@@ -512,7 +512,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC215",
-      "icono": "📘",
+      "icono": "∴",
       "descripcion": "La lógica matemática ofrece reglas para representar conocimiento y razonar con claridad. Es un puente natural hacia los sistemas inteligentes."
     },
     {
@@ -523,7 +523,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC310",
-      "icono": "📘",
+      "icono": "🛢️",
       "descripcion": "Aprende a administrar bases de datos más allá del diseño inicial: rendimiento, disponibilidad y organización para que la información siga siendo útil y confiable.",
       "temas": [
         "Optimización y administración de SGBD",
@@ -541,7 +541,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC312",
-      "icono": "📘",
+      "icono": "📱",
       "descripcion": "Imagina servicios que acompañan a las personas en movimiento. La computación móvil y ubicua combina dispositivos, conectividad y aplicaciones presentes en la vida diaria.",
       "temas": [
         "Fundamentos de la computación móvil y ubicua",
@@ -559,7 +559,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC222",
-      "icono": "📘",
+      "icono": "🛠️",
       "descripcion": "Transforma una necesidad en un plan de software. Requisitos, procesos y trabajo en equipo te ayudan a construir soluciones con método.",
       "temas": [
         "Proceso de construcción del software.",
@@ -577,7 +577,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC225",
-      "icono": "📘",
+      "icono": "📐",
       "descripcion": "Aprende a convertir una idea en un proyecto evaluable. Analiza costos, mercados y viabilidad para decidir si vale la pena llevarla adelante.",
       "temas": [
         "Fundamentos financieros y matemáticos",
@@ -595,7 +595,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "SC314",
-      "icono": "📘",
+      "icono": "🕸️",
       "descripcion": "Cuando una sola máquina no basta, el trabajo se reparte. Explora cómo coordinar tareas y datos entre procesadores y sistemas distribuidos.",
       "temas": [
         "Fundamentos de la programación paralela y distribuida",
@@ -613,7 +613,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC315",
-      "icono": "📘",
+      "icono": "🎲",
       "descripcion": "Crea modelos para ensayar escenarios antes de actuar. La simulación, apoyada por técnicas de IA, permite estudiar sistemas complejos sin intervenir directamente en ellos.",
       "temas": [
         "Introducción a la simulación, componentes de un sistema.",
@@ -631,7 +631,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC320",
-      "icono": "🕸",
+      "icono": "🌍",
       "descripcion": "Diseña experiencias que viven en la web, desde la interfaz hasta los servicios que la sostienen. Une desarrollo, seguridad y despliegue en aplicaciones completas.",
       "temas": [
         "Fundamentos del Desarrollo Web y Frontend",
@@ -649,7 +649,7 @@
       "horasPracticas": 4,
       "creditos": 10,
       "requisitos": "SC310",
-      "icono": "📘",
+      "icono": "🗺️",
       "descripcion": "Escucha el problema, representa sus procesos y diseña una solución coherente. Es el puente entre lo que una organización necesita y el sistema que se construirá.",
       "temas": [
         "Fundamentos del análisis y diseño de sistemas",
@@ -685,7 +685,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC326",
-      "icono": "📘",
+      "icono": "🧪",
       "descripcion": "Lleva la ingeniería de software hacia la calidad: pruebas, estándares y métricas para comprobar que una solución funciona y puede seguir mejorando.",
       "temas": [
         "Calidad y estándares",
@@ -703,7 +703,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": null,
-      "icono": "📘",
+      "icono": "✨",
       "descripcion": "La última electiva te permite profundizar en una especialidad o descubrir un tema nuevo, según la oferta disponible de la carrera."
     },
     {
@@ -714,7 +714,7 @@
       "horasPracticas": 2,
       "creditos": 10,
       "requisitos": "SC328",
-      "icono": "📘",
+      "icono": "📋",
       "descripcion": "Da forma completa a un proyecto: plantea objetivos, estudia su viabilidad y prepara una propuesta que pueda sostenerse en la práctica.",
       "temas": [
         "Concepto de Proyecto.",
@@ -732,7 +732,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "MC327",
-      "icono": "📘",
+      "icono": "🧠",
       "descripcion": "Entra al aprendizaje automático: entrena modelos, evalúa resultados y descubre cómo encontrar patrones en datos para hacer predicciones útiles.",
       "temas": [
         "Aprendizaje supervisado y evaluación de modelos",
@@ -750,7 +750,7 @@
       "horasPracticas": 4,
       "creditos": 10,
       "requisitos": "SC410",
-      "icono": "📘",
+      "icono": "📊",
       "descripcion": "Trabaja con grandes volúmenes de información y sigue su recorrido desde la captura hasta el análisis. La ciencia de datos convierte datos dispersos en decisiones.",
       "temas": [
         "Fundamentos y arquitectura de datos",
@@ -768,7 +768,7 @@
       "horasPracticas": 3,
       "creditos": 10,
       "requisitos": "SC414",
-      "icono": "📘",
+      "icono": "🛡️",
       "descripcion": "Protege sistemas conectados e inteligentes frente a riesgos reales. Aprende a identificar amenazas y diseñar defensas para datos, servicios y modelos.",
       "temas": [
         "Fundamentos y Marco Normativo",
@@ -801,7 +801,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "MC315",
-      "icono": "📘",
+      "icono": "💡",
       "descripcion": "Convierte una oportunidad en una propuesta: explora necesidades, prueba ideas y diseña modelos de negocio para llevar nuevas soluciones al mundo.",
       "temas": [
         "Ecosistema de innovación",
@@ -819,7 +819,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "SC422-SC420",
-      "icono": "📘",
+      "icono": "🤖",
       "descripcion": "Profundiza en proyectos de IA desde los datos y los modelos hasta su despliegue. También examina riesgos, gobernanza y uso responsable.",
       "temas": [
         "Fundamentos y Gobernanza",
@@ -837,7 +837,7 @@
       "horasPracticas": 1,
       "creditos": 8,
       "requisitos": "SC424-SC422",
-      "icono": "📘",
+      "icono": "📝",
       "descripcion": "Empieza a construir tu proyecto de grado: define una pregunta, elige un método y prepara un plan de trabajo que pueda convertirse en una investigación o solución sólida.",
       "temas": [
         "Fundamentos metodológicos y epistemológicos — Metodología de la investigación",
@@ -855,7 +855,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "SC410-SC416",
-      "icono": "⚙️",
+      "icono": "🧭",
       "descripcion": "Aprende a planificar y coordinar sistemas dentro de una organización. Reúne requisitos, diseño y gestión para que la tecnología responda a objetivos concretos.",
       "temas": [
         "Fundamentos y planificación de sistemas",
@@ -873,7 +873,7 @@
       "horasPracticas": 2,
       "creditos": 8,
       "requisitos": "SC429",
-      "icono": "📘",
+      "icono": "🚀",
       "descripcion": "Explora tecnologías emergentes a través de proyectos con alcance amplio. Investiga una oportunidad, diseña una propuesta y comunica su posible impacto.",
       "temas": [
         "Fundamentos de investigación y diseño de proyectos",
@@ -909,7 +909,7 @@
       "horasPracticas": 1,
       "creditos": 10,
       "requisitos": "SC515-SC428-SC427-ID310",
-      "icono": "📘",
+      "icono": "🎓",
       "descripcion": "Completa tu proyecto de grado: ejecuta el plan, documenta resultados y prepara una defensa clara de lo que construiste o investigaste.",
       "temas": [
         "Planificación del proyecto de grado",

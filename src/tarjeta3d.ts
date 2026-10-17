@@ -15,6 +15,11 @@ const escapar = (texto: string) => texto.replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 })[c]!);
 
+const acentos: Record<string, string> = {
+  MC: '#286a96', SC: '#2f8a3c', TR: '#147f83', MR: '#7059a3',
+  BA: '#a56b2f', HH: '#a65368', ID: '#3887a6',
+};
+
 /**
  * Abre la tarjeta partiendo de la posición del cuadro (técnica FLIP):
  * el cuadro "sale" de la malla, viaja al centro y gira 180° mostrando la foto y la información.
@@ -25,20 +30,26 @@ export function abrirTarjeta(celda: HTMLElement, malla: Malla) {
   abierta = celda.dataset.id!;
 
   tarjeta.style.setProperty('--color', colorSemestre(m.semestre));
+  tarjeta.style.setProperty('--acento', acentos[m.sigla?.slice(0, 2) ?? ''] ?? '#698144');
   frente.textContent = m.nombre;
   reverso.innerHTML = `
-    <header>
-      <span class="semestre">${ORDINALES[m.semestre - 1] ?? m.semestre + '°'} Semestre</span>
-      <h3>${escapar(m.nombre)}</h3>
-    </header>
     <figure class="foto">
       <img src="${escapar(imagenMateria(m))}" alt="${escapar(m.nombre)}" />
-      <div class="reserva">${m.icono ?? '📘'}</div>
+      <div class="reserva" aria-hidden="true">
+        <span class="poster-numero">${String(m.semestre).padStart(2, '0')}</span>
+        <span class="poster-icono">${escapar(m.icono ?? '📘')}</span>
+      </div>
     </figure>
-    <div class="info">
-      <p class="descripcion">${escapar(m.descripcion)}</p>
-    </div>
-    <div class="pista">✊ Cierra el puño para cerrar</div>`;
+    <div class="detalle">
+      <header>
+        <span class="semestre">${ORDINALES[m.semestre - 1] ?? m.semestre + '°'} Semestre</span>
+        <h3>${escapar(m.nombre)}</h3>
+      </header>
+      <div class="info">
+        <p class="descripcion">${escapar(m.descripcion)}</p>
+      </div>
+      <div class="pista">✊ Cierra el puño para volver</div>
+    </div>`;
   // Si la foto aún no existe, se muestra el ícono de la materia sobre fondo verde
   const foto = reverso.querySelector<HTMLElement>('.foto')!;
   foto.querySelector('img')!.onerror = () => foto.classList.add('sin-foto');
